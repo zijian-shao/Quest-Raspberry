@@ -40,10 +40,6 @@ function initSssTsrqstUnoff() {
 
     $('.PSLEVEL1GRIDLABEL').addClass('PSLEVEL1GRIDLABEL-GREY');
 
-    var title = $('.PATRANSACTIONTITLE');
-    if (!title.length || !title.text().match(/VIEW UNOFFICIAL TRANSCRIPT/i)) {
-        $('body').addClass('raspberry-modal-content');
-    }
     // console.log('executed - ' + currURL);
 }
 

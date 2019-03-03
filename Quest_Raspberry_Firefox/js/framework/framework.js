@@ -4,7 +4,8 @@ $.fn.loader = function () {
 };
 
 function homepageFunc() {
-    $('body').addClass('raspberry-home');
+    if ($('body').hasClass('raspberry-home')) return;
+    else $('body').addClass('raspberry-home');
     // switcher
     var switcher = $('#PT_HEADER .ps_pagetitle_cont .ps_custom_cont .ps_box-group.nuihdr_hpbtn .ps-button .ps-text');
     switcher.text(switcher.text().replace(' Homepage', ''));
@@ -49,7 +50,8 @@ function homepageFunc() {
 }
 
 function contentPageFunc() {
-    $('body').addClass('raspberry-content');
+    if ($('body').hasClass('raspberry-content')) return;
+    else $('body').addClass('raspberry-content');
 }
 
 if (currURL.match(/PT_LANDINGPAGE/)) {

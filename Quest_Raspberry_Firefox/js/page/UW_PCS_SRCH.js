@@ -12,10 +12,6 @@ function initUwPcsSrch() {
             $('#win0divUW_PCS_SRCH_WRK_CLASS_SEARCH_PB').closest('tr').find('td:empty').remove();
         }
 
-        var title = $('.PATRANSACTIONTITLE');
-        if (!title.length || !title.text().match(/COURSE OFFERING SEARCH/i)) {
-            $('body').addClass('raspberry-modal-content');
-        }
     }
 
     optimizePage();

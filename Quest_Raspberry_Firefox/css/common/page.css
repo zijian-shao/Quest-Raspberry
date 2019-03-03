@@ -63,6 +63,10 @@ html, body {
     box-sizing: border-box;
 }
 
+.raspberry-modal-content .ps_pagecontainer {
+    padding: 10px !important;
+}
+
 /* hr */
 hr, .PSHORIZONTALRULE {
     display: block;

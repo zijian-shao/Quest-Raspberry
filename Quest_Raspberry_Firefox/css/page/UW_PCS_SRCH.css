@@ -51,10 +51,6 @@ table[id^="ACE_UW_PCS_RSLT_VW$"] td {
     padding: 4px;
 }
 
-.raspberry-modal-content .ps_pagecontainer {
-    padding: 10px !important;
-}
-
 #win0divUW_PCS_SRCH_WRK_CLASS_SEARCH_PB {
     margin-left: 20px;
 }
