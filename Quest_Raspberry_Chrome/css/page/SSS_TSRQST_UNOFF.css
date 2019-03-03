@@ -66,10 +66,6 @@ table[id^="SSR_SSTSRQ_SRCH$scroll"] a.PSPUSHBUTTON {
     margin-top: 4px;
 }
 
-.raspberry-modal-content .ps_pagecontainer {
-    padding: 0 !important;
-}
-
 table.PSLEVEL1GRIDWBO {
     border: 1px solid #e5e5e5;
     margin-bottom: 10px;

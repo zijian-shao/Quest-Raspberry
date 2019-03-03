@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Quest Raspberry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Zijian Shao",
   "background": {
     "persistent": false,
@@ -25,7 +25,6 @@
         "css/base.css"
       ],
       "js": [
-        "js/jquery.js",
         "js/configs.js",
         "js/init.js"
       ],
