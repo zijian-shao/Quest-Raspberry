@@ -1,0 +1,69 @@
+.ps_pagecontainer {
+    padding-top: 20px;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+div[id^="win0divDERIVED_SSTSNAV_GO"],
+select[id^="DERIVED_SSTSNAV_SSTS_MAIN_GOTO"],
+#win0divDERIVED_FA_SS_NAME {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+.PSLEVEL1GRIDWBO {
+    border: none;
+}
+
+th.PSLEVEL1GRIDCOLUMNHDR, .PSGROUPBOXLABEL {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    vertical-align: middle;
+}
+
+a.PSLEVEL1GRIDCOLUMNHDR {
+    display: block;
+    background: none !important;
+    color: #fff !important;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border: none;
+}
+
+span[id^="AID_YR_CAR_TERM_DESCR"] {
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.PSLEVEL1GRIDODDROW .PSHYPERLINK, .PSLEVEL1GRIDEVENROW .PSHYPERLINK {
+    color: #ff2b5a !important;
+}
+
+#ACE_DERIVED_FA_SS_L_DASH_LBL {
+    /*margin-top: 10px;*/
+    border-right: 1px solid #e5e5e5 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.PSLEVEL1GRIDWBO th, .PSLEVEL1GRIDWBO td {
+    text-align: left;
+}

@@ -1,0 +1,260 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+#ACE_DERIVED_CLASS_S_GROUPBOX1 td:empty,
+#win0divDERIVED_CLASS_S_SSR_REFRESH_CAL td:empty,
+#WEEKLY_SCHED_HTMLAREA td:empty {
+    display: table-cell;
+}
+
+#win0divDERIVED_CLASS_S_WEEKLY_SCHED_LABEL {
+    display: none;
+}
+
+div[id="win0divDERIVED_REGFRM1_SSR_SCHED_FORMAT$257$lbl"],
+div[id="win0divDERIVED_REGFRM1_SSR_SCHED_FORMAT$257$"] {
+    display: none;
+}
+
+#win0divDERIVED_REGFRM1_SSR_SCHED_FORMAT table,
+#win0divDERIVED_CLASS_S_SSR_REFRESH_CAL table,
+#win0divDERIVED_CLASS_S_GROUPBOX1 table,
+div[id^="win0divSSR_DUMMY_REC$"] table,
+div[id^="win0divSTDNT_WK_NO_MTG$"] table,
+#win0divDERIVED_CLASS_S_MONDAY_LBL table {
+    width: 100%;
+}
+
+.PSGROUPBOXWBO {
+    border-color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.PSGROUPBOXLABEL {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSLEVEL1GRIDWBO {
+    border-color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.PSLEVEL1GRIDLABEL {
+    font-size: 12px !important;
+    font-family: 'Muli', sans-serif !important;
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSLEVEL3GRIDCOLUMNHDR {
+    background: #f6f6f6;
+    color: #000;
+    padding: 5px 15px;
+    border: none;
+    text-align: left;
+}
+
+.PSLEVEL3GRID, .PSLEVEL1GRIDEVENROW {
+    border: none;
+    padding: 10px 15px;
+}
+
+#win0divDERIVED_CLASS_S_MONDAY_LBL .PSGROUPBOX {
+    padding: 10px 15px;
+}
+
+/* switch week */
+#win0divDERIVED_CLASS_S_GROUPBOX1 {
+    margin-bottom: 10px;
+}
+
+#win0divDERIVED_CLASS_S_GROUPBOX1 td {
+    padding: 0;
+    vertical-align: top;
+}
+
+#win0divDERIVED_CLASS_S_GROUPBOX1 .PSPUSHBUTTON {
+    display: block;
+    margin: 0;
+    width: 100% !important;
+}
+
+#win0divDERIVED_CLASS_S_GROUPBOX1 .PSPUSHBUTTON span {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div[id^="win0divDERIVED_CLASS_S_DESCR"] .PSGROUPBOXLABEL {
+    background: none;
+    color: #000;
+    border: 1px solid #2b2c36;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle !important;
+}
+
+#ACE_DERIVED_CLASS_S_SSR_REFRESH_CAL {
+    width: 800px !important;
+    margin: auto;
+}
+
+#ACE_DERIVED_CLASS_S_SSR_REFRESH_CAL td {
+    vertical-align: top;
+}
+
+#ACE_DERIVED_CLASS_S_SSR_REFRESH_CAL .PSPUSHBUTTON {
+    margin: 0;
+}
+
+#DERIVED_CLASS_S_START_DT {
+    min-width: 100px;
+}
+
+/* schedule */
+#WEEKLY_SCHED_HTMLAREA {
+    border: none;
+}
+
+#WEEKLY_SCHED_HTMLAREA td.PSLEVEL3GRIDODDROW[scope="row"] > span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.raspberry-schedule-td {
+    position: relative;
+    vertical-align: top;
+    background: #B3E5BD !important;
+    -webkit-box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;
+    -moz-box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;
+    box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;
+}
+
+.raspberry-schedule-td > span {
+    display: block;
+    height: auto;
+    margin: 0 6px 6px 6px;
+    padding: 10px;
+    border-left: none;
+    background: none !important;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+#WEEKLY_SCHED_HTMLAREA *::-moz-selection {
+    background: #87D28E;
+    color: #000;
+}
+
+#WEEKLY_SCHED_HTMLAREA *::selection {
+    background: #87D28E;
+    color: #000;
+}
+
+/* schedule display */
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT {
+    table-layout: fixed;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT td {
+    position: relative;
+    /*height: 50px;*/
+    padding-bottom: 10px;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT input {
+    opacity: 0.0001;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT label {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 98%;
+    height: 30px;
+    line-height: 30px;
+    color: #2b2c36;
+    text-align: center;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 14px !important;
+    font-family: 'Muli', sans-serif !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: 1px solid #2b2c36;
+    border-radius: 40px;
+    background: #fff;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT label:hover {
+    color: #fff;
+    border: 1px solid #2b2c36;
+    background: #2b2c36;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT input:checked ~ label {
+    color: #ff2b5a;
+    border: 1px solid #ff2b5a;
+    border-radius: 40px;
+    background: #fff;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT input:checked:hover ~ label {
+    color: #fff;
+    border: 1px solid #ff2b5a;
+    background: #ff2b5a;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT label.fl-right {
+    left: auto;
+    right: 0;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+#ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT label.fl-left {
+    left: 0;
+    right: auto;
+    max-width: 400px;
+    margin-left: 10px;
+}
+
+div[id^="win0divDERIVED_CLASS_S_SSR_REFRESH_CAL"] {
+    margin-top: 2px;
+}
+
+#win0divDERIVED_CLASS_S_SSR_PREV_WEEK,
+#win0divDERIVED_CLASS_S_SSR_NEXT_WEEK {
+    margin-top: 4px;
+}
+
+#WEEKLY_SCHED_HTMLAREA td {
+    height: 20px;
+}

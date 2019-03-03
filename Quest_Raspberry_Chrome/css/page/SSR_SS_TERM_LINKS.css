@@ -1,0 +1,17 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+#DERIVED_SSSACA2_SS_ENRL_APP_LINK {
+    margin-left: 10px;
+}

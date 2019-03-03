@@ -1,0 +1,106 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+table[id^="SSR_DUMMY_RECV1"] {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+tr[id^="trSSR_DUMMY_RECV1"] {
+    border: none;
+}
+
+tr[id^="trSSR_DUMMY_RECV1"] td {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 15px;
+}
+
+.PSGROUPBOXLABEL {
+    background: #2b2c36;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.PSGROUPBOXLABEL img {
+    vertical-align: text-bottom;
+}
+
+.PSLEVEL1GRIDLABEL {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR {
+    border: none;
+    background: #f6f6f6;
+    color: #000 !important;
+    padding: 10px 15px;
+}
+
+a.PSLEVEL1GRIDCOLUMNHDR {
+    padding: 0;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border-left: none;
+    border-right: none;
+}
+
+#win0divDERIVED_REGFRM1_SSR_STDNTKEY_DESCR table {
+    width: 100%;
+}
+
+#win0divDERIVED_SSS_GRD_GROUPBOX2 table {
+    width: 100%;
+}
+
+.PSLEVEL1GRIDWBO, .PSLEVEL2GRIDWBO, .PSLEVEL3GRIDWBO {
+    border: none;
+}
+
+#win0divDERIVED_SSS_GRD_ACAD_STNDNG_ACTNlbl,
+ACAD_STACTN_TBL_DESCRFORMAL {
+    padding: 10px 15px;
+}
+
+#ACE_DERIVED_SSS_GRD_GROUPBOX2 .PTGRIDTAB span {
+    line-height: 40px !important;
+    padding: 0 !important;
+}
+
+#win0divDERIVED_SSS_GRD_GROUPBOX2 > table.PABACKGROUNDINVISIBLEWBO {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+}
+
+#win0divDERIVED_SSS_GRD_GROUPBOX1 > table.PSGROUPBOXWBO {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-color: #e5e5e5;
+}
+
+.PSLEVEL1GRID th, .PSLEVEL1GRID td {
+    text-align: left;
+}
+
+.PABACKGROUNDINVISIBLEWBO, .PABACKGROUNDINVISIBLE {
+    width: 100%;
+}

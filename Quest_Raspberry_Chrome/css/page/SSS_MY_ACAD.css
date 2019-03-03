@@ -1,0 +1,61 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+#win0divPSPAGECONTAINER table {
+    width: 100%;
+}
+
+#win0divDERIVED_SSSACAD_SS_UNOFF_TRSC_LINKlbl span {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    display: block;
+}
+
+#win0divDERIVED_SSSACA2_SS_UNOFF_TRSC_LINK span a {
+    font-size: 12px;
+    padding: 15px 0;
+    display: block;
+}
+
+#ACE_DERIVED_SSSACAD_SSR_GROUP5 {
+    background: #f6f6f6;
+    padding: 20px;
+    width: 95%!important;
+    margin-left: 5%!important;
+}
+
+#ACE_DERIVED_SSSACAD_SSR_GROUP5 * {
+    font-size: 12px;
+}
+
+#win0divDERIVED_SSSACAD_HTMLAREA1 {
+    margin-top: 10px;
+}
+
+#win0divDERIVED_SSSACAD_HTMLAREA1 > div {
+    width: 100%;
+}
+
+#win0divDERIVED_SSSACAD_HTMLAREA1 img {
+    vertical-align: text-bottom;
+}
+
+#win0divDERIVED_SSSACAD_HTMLAREA1 div[role="tree"] div {
+    padding: 4px 0;
+}
+
+#DERIVED_SSSACA2_SS_UNOFF_TRSC_LINK {
+    color: #ff2b5a;
+}

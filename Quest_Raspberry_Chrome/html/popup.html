@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quest Raspberry Popup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/css/popup.css">
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo"></div>
+    <div class="checkbox-slide">
+        <input type="checkbox" id="enable-raspberry">
+        <label for="enable-raspberry"></label>
+    </div>
+</div>
+
+<div class="content">
+
+    <div class="btn btn-red" id="open-quest">
+        <div class="btn-icon"><img src="../img/popup-icon-waterloo.png" alt="Quest"></div>
+        <div class="btn-text">Quest Login</div>
+    </div>
+    <div class="btn btn-green" id="more-options">
+        <div class="btn-icon"><img src="../img/popup-icon-cog.png" alt="Options"></div>
+        <div class="btn-text">Extension Options</div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="report">Extension didn't work? <span class="link" id="report-bug">Report issue</span></div>
+</div>
+
+<div class="raspberry-toast raspberry-toast-hidden" id="raspberry-toast">
+    Refresh for the changes to take effect.
+</div>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/configs.js"></script>
+<script type="text/javascript" src="/js/popup.js"></script>
+
+</body>
+</html>

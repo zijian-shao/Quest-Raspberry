@@ -1,0 +1,80 @@
+/* personal info navbar */
+#win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS table {
+    background: none;
+    /*table-layout: fixed;*/
+    width: 100%;
+}
+
+#win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS td {
+    background: #26262d;
+    width: auto;
+}
+
+.PTGRIDTAB a span, #PSTAB a span {
+    padding: 15px 10px;
+}
+
+#PSTAB a:hover span, .PTGRIDTAB a:hover span {
+    padding: 15px 10px;
+}
+
+#PSTAB #selected a span, .PTGRIDTAB #selected a span {
+    padding: 15px 10px;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    /*display: none;*/
+}
+
+.PSPAGECONTAINER, .PABACKGROUNDINVISIBLEWBO,
+.PABACKGROUNDINVISIBLEWBO table {
+    width: 100%;
+}
+
+.PSLEVEL1GRIDWBO {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    width: 100%;
+}
+
+th.PSLEVEL1GRIDCOLUMNHDR,
+.PSGROUPBOXLABEL,
+th.PSLEVEL2GRIDCOLUMNHDR {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+}
+
+a.PSLEVEL1GRIDCOLUMNHDR, a.PSLEVEL2GRIDCOLUMNHDR, span.PSLEVEL2GRIDCOLUMNHDR {
+    display: inline-block;
+    background: none !important;
+    color: #fff !important;
+    border: none;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#win0divHR_LBL_WRK_HEADING .PSPUSHBUTTON,
+#win0divHR_LINK_WRK_ADD_PB .PSPUSHBUTTON {
+    margin-top: 4px;
+}

@@ -1,0 +1,41 @@
+.PSPAGECONTAINER {
+    /*width: 100%;*/
+    position: relative;
+}
+
+td {
+    /*vertical-align: middle;*/
+    /*padding: 0;*/
+}
+
+td:empty {
+    display: none;
+}
+
+table[id^="ACE_UW_DERIVED_CEM2_GROUP_BOX_"] td:empty {
+    display: table-cell;
+}
+
+table {
+    /*width: 100%;*/
+}
+
+#win0divDERIVED_CLSRCH_GROUPBOX1 table {
+    /*width: 100%;*/
+}
+
+.PSLEVEL1SCROLLAREABODY {
+    /*max-width: 400px;*/
+}
+
+.PSLEVEL1SCROLLAREABODY td {
+    /*padding: 5px 0;*/
+}
+
+#win0divSCHEDULE_LNK {
+    /*padding: 5px 0;*/
+}
+
+#UW_DERIVED_CEM2_UW_CEM_LINK3 {
+    width: auto !important;
+}

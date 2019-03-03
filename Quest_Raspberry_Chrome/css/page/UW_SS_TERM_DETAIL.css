@@ -1,0 +1,69 @@
+.ps_pagecontainer {
+    padding-top: 0;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+#win0divPERSONAL_DTSAVW_EMPLIDlbl,
+#win0divPERSONAL_DTSAVW_EMPLID {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+.PSLEVEL1GRIDWBO {
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+
+.PSLEVEL1GRIDLABEL {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+th.PSLEVEL1GRIDCOLUMNHDR {
+    background: #f6f6f6;
+    color: #000;
+    padding: 5px 15px;
+    border: none;
+}
+
+a.PSLEVEL1GRIDCOLUMNHDR {
+    color: #000 !important;
+    display: inline-block;
+    padding: 0;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSFRAMEWBO {
+    border: none;
+    width: auto;
+}
+
+.PSFRAMEWBO td:empty {
+    display: table-cell;
+}
+
+.PSFRAMEWBO font {
+    font-size: 12px;
+}

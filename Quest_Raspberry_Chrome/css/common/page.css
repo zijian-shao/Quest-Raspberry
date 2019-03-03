@@ -1,0 +1,353 @@
+/* reset */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: none !important;
+}
+
+/* selection */
+::-moz-selection {
+    background: #ff2b5a;
+    color: #fff;
+}
+
+::selection {
+    background: #ff2b5a;
+    color: #fff;
+}
+
+/* scroll bar */
+/*::-webkit-scrollbar-track {*/
+/*background: #2b2c36;*/
+/*}*/
+
+/*::-webkit-scrollbar {*/
+/*width: 10px;*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+/*background-color: #434554;*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb:hover {*/
+/*background: #51525d;*/
+/*}*/
+
+/** {*/
+/*scrollbar-width: thin;*/
+/*scrollbar-color: dark;*/
+/*}*/
+
+.vRCPgltArea_hidden {
+    opacity: 0;
+}
+
+.PSPAGE {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/* page container */
+.ps_pagecontainer {
+    width: 100%;
+    /*min-height: 100vh;*/
+    margin: 0;
+    padding: 70px 30px 30px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* hr */
+hr, .PSHORIZONTALRULE {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* popup */
+#pt_modalMask {
+    background: rgba(43, 44, 54, 0.3);
+    opacity: 1;
+}
+
+.PSMODALTABLE,
+.ps_modal_container {
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+    -moz-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0 !important;
+}
+
+.PSMODALBOTTOM {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.PSMODALHEADER, .PTPOPUP_HEADER,
+.ps_modal_header {
+    background-color: #2b2c36 !important;
+    border: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}
+
+.ps_modal_container .ps_modal_title {
+    padding-bottom: 4px !important;
+    border: none !important;
+}
+
+.PSMODALTABLE .PSMODALCONTENT {
+    border: none !important;
+}
+
+.PSMODALBOTTOM {
+    border: none !important;
+}
+
+.PTPOPUP_TITLE {
+    background: none !important;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+/* link */
+.PSHYPERLINK, .PSHYPERLINK:visited,
+.PSHYPERLINK a, .PSHYPERLINK a:visited,
+a, a:visited {
+    color: #ff2b5a;
+    text-decoration: none !important;
+}
+
+.PSHYPERLINK:hover, .PSHYPERLINK:focus, .PSHYPERLINK:active,
+.PSHYPERLINK a:hover, .PSHYPERLINK a:focus, .PSHYPERLINK a:active,
+a:hover, a:focus, a:active {
+    color: #ff2b5a;
+    text-decoration: underline;
+}
+
+th a:hover, th a:focus, th a:active {
+    color: #ff2b5a !important;
+}
+
+/* ps text */
+.PSTEXT, .PAPAGEINSTRUCTIONS, .PALEVEL0SECONDARY {
+    color: #333;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* calendar */
+#fullCalendar {
+    width: 220px !important;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+#fullCalendar td:empty {
+    display: table-cell;
+}
+
+#headCalendar {
+    width: 100% !important;
+}
+
+#bodyCalendar {
+    width: 197px !important;
+}
+
+/* table header */
+.PSGROUPBOXLABEL,
+.PSLEVEL1SCROLLAREAHEADER,
+.PSLEVEL2SCROLLAREAHEADER,
+.PSLEVEL3SCROLLAREAHEADER,
+.PSLEVEL1GRIDLABEL,
+.PSLEVEL2GRIDLABEL,
+.PSLEVEL3GRIDLABEL,
+.PAGROUPDIVIDER {
+    font-size: 12px !important;
+}
+
+.raspberry-loader#WAIT_win0 {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: #ff2b5a url(../../img/loader.svg) center no-repeat;
+    background-size: contain;
+}
+
+.raspberry-loader#WAIT_win0 img {
+    display: none;
+}
+
+/* img replace */
+.PTCOLLAPSE_ARROW, .PTEXPAND_ARROW {
+    position: relative;
+}
+
+.PTCOLLAPSE_ARROW:before {
+    content: "";
+    display: block;
+    border: 5px solid transparent;
+    border-top-color: #b2b2b2;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 2px);
+}
+
+.PTEXPAND_ARROW:before {
+    content: "";
+    display: block;
+    border: 5px solid transparent;
+    border-left-color: #b2b2b2;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    left: 6px;
+    right: 0;
+    top: calc(50% - 4px);
+}
+
+.raspberry-img-icon-replace {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: center no-repeat;
+    background-size: contain;
+}
+
+.raspberry-img-icon-replace-16x16 {
+    width: 16px;
+    height: 16px;
+    padding-left: 16px;
+}
+
+.raspberry-img-icon-replace-25x25 {
+    width: 25px;
+    height: 25px;
+    padding-left: 25px;
+}
+
+.raspberry-img-icon-replace-31x18 {
+    width: 31px;
+    height: 18px;
+    padding-left: 31px;
+}
+
+.raspberry-img-icon-replace-PS_ACADEMIC_DEADLINES_ICN_1 {
+    background-image: url(../../img/static/PS_ACADEMIC_DEADLINES_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_COLLAPSE_ICN_1 {
+    background-image: url(../../img/static/PS_COLLAPSE_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STATUS_ERROR_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STATUS_ERROR_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STATUS_CLOSED_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STATUS_CLOSED_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STATUS_DROPPED_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STATUS_DROPPED_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STATUS_OPEN_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STATUS_OPEN_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STATUS_SUCCESS_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STATUS_SUCCESS_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_DELETE_ICN_1 {
+    background-image: url(../../img/static/PS_DELETE_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_EDIT_ICN_1 {
+    background-image: url(../../img/static/PS_EDIT_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_EXPAND_ICN_1 {
+    background-image: url(../../img/static/PS_EXPAND_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_SCROLL_TOP_VER_ICN_1 {
+    background-image: url(../../img/static/PS_SCROLL_TOP_VER_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PT_CALENDAR_1 {
+    background-image: url(../../img/static/PT_CALENDAR_1.png);
+}
+
+.raspberry-img-icon-replace-PT_HELP_SWAN_1 {
+    background-image: url(../../img/static/PT_HELP_SWAN_1.png);
+}
+
+.raspberry-img-icon-replace-PT_PROMPT_LOOKUP_1 {
+    background-image: url(../../img/static/PT_PROMPT_LOOKUP_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP01_ENA_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP01_ENA_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP01_INP_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP01_INP_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP02_DIS_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP02_DIS_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP02_ENA_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP02_ENA_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP02_INP_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP02_INP_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP03_DIS_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP03_DIS_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_STEP03_ENA_ICN_1 {
+    background-image: url(../../img/static/PS_CS_STEP03_ENA_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CONFIRM_CHECKMARK_IMG_1 {
+    background-image: url(../../img/static/PS_CONFIRM_CHECKMARK_IMG_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_MESSAGE_CONFIRM_ICN_1 {
+    background-image: url(../../img/static/PS_CS_MESSAGE_CONFIRM_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_CS_MESSAGE_WARNING_ICN_1 {
+    background-image: url(../../img/static/PS_CS_MESSAGE_WARNING_ICN_1.png);
+}
+
+.raspberry-img-icon-replace-PS_DELETE_QUESTION_IMG_1 {
+    background-image: url(../../img/static/PS_DELETE_QUESTION_IMG_1.png);
+}
+

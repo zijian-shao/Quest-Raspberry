@@ -1,0 +1,39 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+.PAGROUPBOXLABELINVISIBLE {
+    display: none;
+}
+
+.PAADDITIONALINSTRUCTIONS, .PAADDITIONALINSTRUCTIONS:hover {
+    color: #000;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+}
+
+#win0divDERIVED_CLSRCH_GROUPBOX1 {
+    display: none;
+}
+
+#win0divDERIVED_SSS_SCL_ table {
+    width: 100%;
+}
+
+table[id^="ACE_ACADPROGCURRENT"] {
+    max-width: 700px;
+}
+
+table[id^="ACE_ACADPROGCURRENT"] td {
+    padding: 5px 0;
+}

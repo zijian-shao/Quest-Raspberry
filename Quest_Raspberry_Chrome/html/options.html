@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quest Raspberry Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="/css/options.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <div class="logo"></div>
+        <div class="ext-version" id="ext-version"></div>
+
+        <div class="content">
+
+            <!-- Enable -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-0-0" data-option-name="GLB_Enabled" data-option-type="switch">
+                    <label for="opt-global-0-0"></label>
+                </div>
+                <label for="opt-global-0-0">Enable Quest Raspberry</label>
+            </div>
+
+            <!-- Auto redirect login -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-1-0" data-option-name="GLB_AutoRedirectToLogin"
+                           data-option-type="switch">
+                    <label for="opt-global-1-0"></label>
+                </div>
+                <label for="opt-global-1-0">Auto redirect to login page</label>
+            </div>
+
+            <!-- Back to top -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-2-0" data-option-name="GLB_BackToTopButton"
+                           data-option-type="switch">
+                    <label for="opt-global-2-0"></label>
+                </div>
+                <label for="opt-global-2-0">Add back-to-top button</label>
+            </div>
+
+            <!-- Keep session alive -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-3-0" data-option-name="GLB_KeepSessionAlive"
+                           data-option-type="switch">
+                    <label for="opt-global-3-0"></label>
+                </div>
+                <label for="opt-global-3-0">Keep session alive (beta)</label>
+            </div>
+
+            <!-- High res image -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-4-0" data-option-name="GLB_HighResImage"
+                           data-option-type="switch">
+                    <label for="opt-global-4-0"></label>
+                </div>
+                <label for="opt-global-4-0">Improve image icon resolution</label>
+            </div>
+
+            <!-- Raspberry favicon -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-5-0" data-option-name="GLB_RaspberryFavicon"
+                           data-option-type="switch">
+                    <label for="opt-global-5-0"></label>
+                </div>
+                <label for="opt-global-5-0">Raspberry favicon</label>
+            </div>
+
+            <!-- Raspberry welcome page -->
+            <div class="group">
+                <div class="checkbox-slide">
+                    <input type="checkbox" id="opt-global-6-0" data-option-name="GLB_RaspberryWelcomePage"
+                           data-option-type="switch">
+                    <label for="opt-global-6-0"></label>
+                </div>
+                <label for="opt-global-6-0">Raspberry welcome page</label>
+            </div>
+
+            <!-- About -->
+            <div class="group group-about group-about-off" id="about">
+                <div class="about">About Extension</div>
+            </div>
+
+            <!-- About content -->
+            <div class="about-content" style="height: 0px;">
+                <div class="about-content-body">
+                    <h4>Introduction</h4>
+                    <p>Thanks for using Quest Raspberry! This extension applies a new theme to Quest.</p>
+                    <p>Some pages remain as they are to avoid display errors. However, <strong>when you want to make
+                        sure everything is not going wrong, please disable this extension temporarily</strong>.</p>
+                    <p>Due to the complexity of the site, this extension prepared separated css and js for each page
+                        instead of global ones to guarantee pages are displayed correctly most of the time.</p>
+
+                    <h4>Links</h4>
+                    <a data-href="officialWebsite" target="_blank">Website</a>&nbsp;|&nbsp;
+                    <a data-href="donate" target="_blank">Donate</a>&nbsp;|&nbsp;
+                    <a data-href="github" target="_blank">GitHub</a>&nbsp;|&nbsp;
+                    <a data-href="raspberryStore" target="_blank">Store</a>
+
+                    <h4>Recommended</h4>
+                    <a data-href="darklightStore" target="_blank">Learn Darklight</a>&nbsp;|&nbsp;
+                    <a data-href="azureStore" target="_blank">WaterlooWorks Azure</a>&nbsp;|&nbsp;
+                    <a data-href="autologStore" target="_blank">Waterloo AutoLog</a>
+
+                    <h4>Notes</h4>
+                    <p>▷ Try not to use multiple Quest extensions together to avoid unexpected behaviors</p>
+                    <p>▷ Quest may change at any time, thus the extension may not function properly</p>
+                    <p>▷ If you have any questions regarding this extension, please email me at
+                        <a data-href="mailTo">sam.zj.shao@gmail.com</a>
+                        or
+                        <a target="_blank" id="feedback-link">submit your feedback online</a></p>
+
+                    <h4>Disclaimers</h4>
+                    <p>▷ This extension has no affiliation with Quest, its developers, or the University of
+                        Waterloo</p>
+                    <p>▷ Use this extension at your own responsibility</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="group">
+                <div class="copyright">Created by Zijian Shao</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="raspberry-toast raspberry-toast-hidden" id="raspberry-toast">Options Saved</div>
+
+<!-- whats new -->
+<div class="whatsnew hidden" id="whatsnew">
+    <div class="whatsnew-logo"></div>
+    <div class="whatsnew-btn">OK, GOT IT</div>
+</div>
+
+<!-- welcome -->
+<div class="welcome hidden" id="welcome">
+    <div class="welcome-logo"></div>
+    <div class="welcome-btn">OK, GOT IT</div>
+</div>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/configs.js"></script>
+<script type="text/javascript" src="/js/options.js"></script>
+
+</body>
+</html>

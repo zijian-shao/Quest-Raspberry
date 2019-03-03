@@ -1,0 +1,18 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+div[id^="win0divDERIVED_CLSRCH_GROUPBOX1"],
+div[id^="win0divDERIVED_CLSRCH_GROUPBOX1"] table{
+    width: 100%;
+}

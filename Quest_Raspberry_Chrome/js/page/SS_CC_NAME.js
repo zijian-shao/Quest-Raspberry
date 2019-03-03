@@ -1,0 +1,5 @@
+function initSsCcName() {
+
+}
+
+initSsCcName();

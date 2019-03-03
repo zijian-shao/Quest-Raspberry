@@ -1,0 +1,108 @@
+.ps_pagecontainer {
+    padding: 30px 300px 30px 30px;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: top;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+.PSGROUPBOXLABEL {
+    background: #2b2c36;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.PSGROUPBOXNBO .PSGROUPBOX .PABACKGROUNDINVISIBLEWBO .PABACKGROUNDINVISIBLE .PSGROUPBOXNBO {
+    border: none;
+}
+
+.PSGROUPBOXNBO .PSGROUPBOX .PABACKGROUNDINVISIBLEWBO .PABACKGROUNDINVISIBLE .PSGROUPBOXNBO .PSGROUPBOXLABEL,
+.PSLEVEL2GRIDLABEL {
+    padding: 10px 15px;
+    background: #e5e5e5;
+    color: #000;
+}
+
+#win0divDERIVED_SSS_SCL_SS_MYPROFILE_LINK td:empty {
+    /*text-align: left;*/
+    display: table-cell;
+}
+
+#ACE_DERIVED_SSS_SCL_SS_MYPROFILE_LINK {
+    padding-top: 0;
+}
+
+#ACE_DERIVED_SSS_SCL_SSS_PERSONAL_INFO > tbody > tr:nth-child(2) {
+    display: none;
+}
+
+.PSGROUPBOXLABEL img {
+    vertical-align: text-bottom;
+}
+
+#ACE_DERIVED_SSS_SCL_TITLE1,
+#win0divDERIVED_REGFRM1_TITLE1,
+#win0divDERIVED_SSS_SCL_SSS_MORE_ACADEMICS,
+#win0divDERIVED_SSS_SCL_SSS_GO_1,
+#win0divDERIVED_SSS_SCL_SSS_MORE_FINANCE,
+#win0divDERIVED_SSS_SCL_SSS_GO_2,
+#win0divDERIVED_SSS_SCL_SSS_MORE_PROFILE,
+#win0divDERIVED_SSS_SCL_SSS_GO_3 {
+    display: none;
+}
+
+.raspberry-fix-right {
+    position: fixed;
+    top: 32px;
+    right: 30px;
+    background: #fff;
+    width: 250px;
+}
+
+div[id^="win0div$ICField53"] .PSGROUPBOXLABEL {
+    padding: 10px 5px;
+}
+
+div[id^="win0div$ICField53"] .PSGROUPBOXWBO {
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+div[id^="win0div$ICField53"] .PSGROUPBOX {
+    padding: 10px;
+    background: #f6f6f6;
+}
+
+.PSGROUPBOXNBO {
+    background: #f6f6f6;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.PSGROUPBOXNBO .PSGROUPBOX {
+    padding: 10px 15px;
+}
+
+.PSGROUPBOX .PSHYPERLINK {
+    padding: 4px 0;
+    display: inline-block;
+    color: #ff2b5a !important;
+}
+
