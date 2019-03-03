@@ -1,0 +1,27 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td:empty {
+    display: none;
+}
+
+div[id="win0divDERIVED_REGFRM1_TITLE1"] {
+    display: none;
+}
+
+.PABACKGROUNDINVISIBLEWBO,
+.PABACKGROUNDINVISIBLEWBO table {
+    width: 100%;
+}
+
+.PSLEVEL1SCROLLAREABODYWBO {
+    border: 1px solid #e5e5e5;
+}
+
+.PSLEVEL1SCROLLAREAHEADER {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+}

@@ -1,0 +1,63 @@
+.PSPAGECONTAINER {
+    /*width: 100%;*/
+    position: relative;
+}
+
+/*td {*/
+    /*vertical-align: middle;*/
+    /*padding: 0;*/
+/*}*/
+
+/*td:empty {*/
+    /*display: none;*/
+/*}*/
+
+/*#ACE_DERIVED_REGFRM1_GROUPBOX2 td:empty,*/
+/*table[id^="ACE_DERIVED_REGFRM1_SSR_WAIT_LIST_OFF"] td:empty,*/
+/*#win0divDERIVED_CLSRCH_GROUP2 td:empty{*/
+    /*display: table-cell;*/
+/*}*/
+
+/*.PSLEVEL1GRIDLABEL, .PSGROUPBOXLABEL {*/
+    /*background: #2b2c36;*/
+    /*color: #fff;*/
+    /*padding: 5px 15px;*/
+    /*border: none;*/
+/*}*/
+
+/*th.PSLEVEL1GRIDCOLUMNHDR {*/
+    /*background: #2b2c36;*/
+    /*color: #fff;*/
+    /*padding: 10px 15px;*/
+    /*border: none;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+/*a.PSLEVEL1GRIDCOLUMNHDR {*/
+    /*display: block;*/
+    /*background: none !important;*/
+    /*color: #fff !important;*/
+/*}*/
+
+/*.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {*/
+    /*padding: 10px 15px;*/
+    /*border: none;*/
+    /*border-bottom: 1px solid #e5e5e5;*/
+/*}*/
+
+/*.PSLEVEL1GRIDODDROW .PSHYPERLINK, .PSLEVEL1GRIDEVENROW .PSHYPERLINK {*/
+    /*color: #ff2b5a;*/
+/*}*/
+
+/*.PSLEVEL1GRID .PSLEVEL1GRIDCOLUMNHDR {*/
+    /*display: none;*/
+/*}*/
+
+/*#win0divDERIVED_REGFRM1_GROUPBOX2 table,*/
+/*#win0divDERIVED_REGFRM1_GROUP6 table {*/
+    /*width: 100%;*/
+/*}*/
+
+/*table[id^="ACE_DERIVED_REGFRM1_SSR_WAIT_LIST_OFF"] {*/
+    /*width: 300px !important;*/
+/*}*/

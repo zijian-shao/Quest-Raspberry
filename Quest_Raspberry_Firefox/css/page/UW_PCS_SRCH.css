@@ -1,0 +1,60 @@
+.PSPAGECONTAINER {
+    /*width: 100%;*/
+    /*position: relative;*/
+}
+
+td {
+    /*vertical-align: middle;*/
+    /*padding: 0;*/
+}
+
+td:empty {
+    /*display: none;*/
+}
+
+#win0divDERIVED_CLSRCH_GROUPBOX1 table {
+    /*width: 100%;*/
+}
+
+.PSPAGECONTAINER > tbody > tr:nth-child(n+6) {
+    /*max-width: 600px;*/
+}
+
+.PSPAGECONTAINER#ACE_width > tbody > tr:nth-child(n+1) td:empty {
+    /*display: table-cell;*/
+}
+
+.PSPAGECONTAINER#ACE_width > tbody > tr:nth-last-child(-n+2) td:empty {
+    /*display: none;*/
+}
+
+table[id="ACE_$ICField28"], table[id="ACE_$ICField28"] table {
+    /*width: 100%;*/
+}
+
+.PSLEVEL1SCROLLAREAHEADER {
+    border: none;
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.PSLEVEL1SCROLLAREAHEADER .PSLEVEL1SCROLLAREAHEADER {
+    padding: 0;
+}
+
+.PSLEVEL1SCROLLAREAHEADER a, .PSLEVEL1SCROLLAREAHEADER span {
+    color: #fff !important;
+}
+
+table[id^="ACE_UW_PCS_RSLT_VW$"] td {
+    padding: 4px;
+}
+
+.raspberry-modal-content .ps_pagecontainer {
+    padding: 10px !important;
+}
+
+#win0divUW_PCS_SRCH_WRK_CLASS_SEARCH_PB {
+    margin-left: 20px;
+}

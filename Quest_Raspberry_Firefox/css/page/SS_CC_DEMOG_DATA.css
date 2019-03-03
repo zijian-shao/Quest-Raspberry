@@ -1,0 +1,92 @@
+/* personal info navbar */
+#win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS table {
+    background: none;
+    /*table-layout: fixed;*/
+    width: 100%;
+}
+
+#win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS td {
+    background: #26262d;
+    width: auto;
+}
+
+.PTGRIDTAB a span, #PSTAB a span {
+    padding: 15px 10px;
+}
+
+#PSTAB a:hover span, .PTGRIDTAB a:hover span {
+    padding: 15px 10px;
+}
+
+#PSTAB #selected a span, .PTGRIDTAB #selected a span {
+    padding: 15px 10px;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+.PSLEVEL1SCROLLAREABODYNBO {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.PAGROUPDIVIDER {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSEDITBOXLABEL {
+    background: #f6f6f6;
+    color: #000;
+    padding: 5px 15px;
+    border: none;
+    text-align: left;
+    display: block;
+}
+
+.PSEDITBOX_DISPONLY {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+div[id="win0div$ICField53"] {
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+
+div[id="win0div$ICField53"] table td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 5px 15px;
+}
+
+div[id="win0div$ICField53"] table td .PSEDITBOX_DISPONLY,
+div[id="win0div$ICField53"] table td .PSEDITBOXLABEL {
+    padding: 0;
+    background: none;
+}

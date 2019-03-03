@@ -1,0 +1,58 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+.PSLEVEL1SCROLLAREABODY td:empty {
+    display: table-cell;
+}
+
+#win0divUW_CEM_DEMAND_P_EMPLID, #UW_DERIVED_CEM_PERSON_NAME {
+    display: none;
+}
+
+.PSGROUPBOXLABEL {
+    background: #2b2c36;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+}
+
+table {
+    width: 100%;
+}
+
+#ACE_UW_DERIVED_CEM_GROUP_BOX td {
+    padding: 10px 15px;
+}
+
+#ACE_UW_DERIVED_CEM_GROUP_BOX_2 {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+#win0divUW_DERIVED_CEM_GROUP_BOX > table {
+    border: 1px solid #e5e5e5;
+}
+
+.PSLEVEL1SCROLLAREABODY td {
+    vertical-align: top;
+}
+
+.PSLEVEL1SCROLLAREAHEADER {
+    background: #f6f6f6;
+}
+
+#UW_DERIVED_CEM_UW_CEM_LINK3 {
+    width: auto !important;
+}

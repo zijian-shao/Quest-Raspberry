@@ -1,0 +1,21 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+#win0divDERIVED_CLSRCH_GROUPBOX1 table {
+    width: 100%;
+}
+
+#win0divDERIVED_REGFRM1_TITLE1 {
+    display: none;
+}

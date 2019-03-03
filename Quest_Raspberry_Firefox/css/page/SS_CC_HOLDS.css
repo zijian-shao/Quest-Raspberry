@@ -1,0 +1,22 @@
+.ps_pagecontainer {
+    padding-top: 20px;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+.PABACKGROUNDINVISIBLEWBO,
+.PABACKGROUNDINVISIBLEWBO table {
+    width: 100%;
+}
+
+td:empty {
+    display: none;
+}
+
+#DERIVED_CC_NAME,
+#win0divDERIVED_SSTSNAV_GROUP_BOX_1 {
+    display: none;
+}

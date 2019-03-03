@@ -1,0 +1,25 @@
+/* footer links */
+#win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS {
+    vertical-align: middle !important;
+}
+
+#win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS a {
+    color: #ff2b5a !important;
+}
+
+#win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS > div {
+    width: 100% !important;
+}
+
+#win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS img {
+    vertical-align: text-bottom !important;
+    margin-right: 0.5em !important;
+}
+
+#win0divDERIVED_CLSRCH_SSR_GROUP_FTR1 table {
+    width: 100% !important;
+}
+
+.raspberry-footer-full-width table {
+    width: 100% !important;
+}

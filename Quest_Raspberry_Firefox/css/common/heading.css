@@ -1,0 +1,29 @@
+/* headings */
+.PATRANSACTIONTITLE,
+.PAPAGETITLE, .PSSRCHACTION {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 5px !important;
+    font-size: 18px !important;
+    font-family: 'Muli', sans-serif !important;
+    color: #ff2b5a !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    text-transform: uppercase !important;
+    line-height: normal !important;
+    display: block !important;
+}
+
+.PATRANSACTIONTITLE {
+    font-size: 14px !important;
+}
+
+.PAPAGETITLE, .PSSRCHACTION {
+    font-size: 18px !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+.raspberry-heading-full-width table {
+    width: 100% !important;
+}

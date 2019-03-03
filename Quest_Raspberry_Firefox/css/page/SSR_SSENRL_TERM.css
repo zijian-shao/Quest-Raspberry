@@ -1,0 +1,55 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+.PSLEVEL1GRIDWBO, .PSLEVEL2GRIDWBO, .PSLEVEL3GRIDWBO {
+    width: 100%;
+}
+
+.PSLEVEL1GRIDLABEL {
+    font-size: 12px !important;
+    font-family: 'Muli', sans-serif !important;
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR {
+    border: none;
+    background: #f6f6f6;
+    color: #000 !important;
+    padding: 10px 15px;
+}
+
+a.PSLEVEL1GRIDCOLUMNHDR {
+    padding: 0;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border-left: none;
+    border-right: none;
+}
+
+.PSLEVEL2GRIDROW {
+    border: none;
+    background: #fff;
+    color: #000 !important;
+    padding: 10px 15px;
+}
+
+table[id^="SSR_DUMMY_RECV1$scroll$"] {
+    border-bottom: none;
+    margin-bottom: 10px;
+}

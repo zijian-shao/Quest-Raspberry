@@ -1,0 +1,51 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+.PSGROUPBOXWBO {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.PSGROUPBOXLABEL, .PAGROUPDIVIDER {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSLEVEL3GRIDCOLUMNHDR {
+    background: #f6f6f6;
+    color: #000;
+    padding: 5px 15px;
+    border: none;
+}
+
+.PSLEVEL3GRIDROW {
+    padding: 10px 15px;
+}
+
+.PABACKGROUNDINVISIBLEWBO,
+.PABACKGROUNDINVISIBLEWBO table,
+.PABACKGROUNDINVISIBLE,
+.PABACKGROUNDINVISIBLE table {
+    width: 100%;
+}
+
+.PSLEVEL2GRIDROW {
+    padding: 10px 15px;
+}
+
+.PSLEVEL3GRIDNBO {
+    border-bottom: 1px solid #e5e5e5;
+}

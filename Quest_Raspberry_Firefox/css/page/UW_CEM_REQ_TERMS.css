@@ -1,0 +1,52 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+div[id^="win0divDERIVED_CLSRCH_GROUPBOX1"] table {
+    width: 100%
+}
+
+table[id^="UW_CEM_TR_SRCH$scroll$"] {
+    border-top: 1px solid #e5e5e5 !important;
+    border-right: 1px solid #e5e5e5 !important;
+}
+
+table[id="ACE_UW_DERIVED_CEM_GROUP_BOX_1"],
+table[id="ACE_UW_DERIVED_CEM_GROUP_BOX_1"] table {
+    width: 100%;
+}
+
+.PAGRIDHEADER {
+    border: none;
+    background: #f6f6f6;
+    color: #000 !important;
+    padding: 10px 15px;
+}
+
+a.PAGRIDHEADER {
+    padding: 0;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border-left: none;
+    border-right: none;
+}
+
+#win0divUW_DERIVED_CEM_GROUP_BOX_1 td .PSHYPERLINK {
+    color: #ff2b5a !important;
+}
+
+tr[id^="trUW_CEM_TR_SRCH$0_row"] {
+    cursor: pointer;
+}

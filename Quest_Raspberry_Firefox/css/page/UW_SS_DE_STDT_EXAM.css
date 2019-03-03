@@ -1,0 +1,38 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+/*td:empty {*/
+    /*display: none;*/
+/*}*/
+
+/*div[id^="UW_DE_STUDENT_ENRL$scroll"] td:empty {*/
+    /*display: table-cell;*/
+/*}*/
+
+.PSLEVEL1SCROLLAREAHEADER,
+.PSLEVEL2SCROLLAREAHEADER {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.PSLEVEL1SCROLLAREAHEADER .PSLEVEL1SCROLLAREAHEADER,
+.PSLEVEL2SCROLLAREAHEADER .PSLEVEL2SCROLLAREAHEADER {
+    padding: 0;
+}
+
+.PSLEVEL1SCROLLAREAHEADER .PSHEADERHYPERLINKD,
+.PSLEVEL1SCROLLAREAHEADER .PSGRIDCOUNTER,
+.PSGRIDNAVIGATOR a,
+.PSLEVEL2SCROLLAREAHEADER .PSHEADERHYPERLINKD,
+.PSLEVEL2SCROLLAREAHEADER .PSGRIDCOUNTER {
+    color: #fff !important;
+}

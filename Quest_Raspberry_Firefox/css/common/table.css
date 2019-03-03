@@ -1,0 +1,91 @@
+.PSGROUPBOXWBO, .PSLEVEL1GRIDWBO {
+    border-color: #e5e5e5;
+}
+
+.PSLEVEL1GRIDWBO {
+    border-bottom: none;
+}
+
+.PSLEVEL1GRIDLABEL,
+.PSGROUPBOXLABEL {
+    font-size: 12px !important;
+    font-family: 'Muli', sans-serif !important;
+    background: #2b2c36;
+    color: #fff;
+    padding: 6px;
+    border: none;
+}
+
+.PAGROUPDIVIDER {
+    background: #2b2c36;
+    color: #fff;
+    border-color: #2b2c36;
+}
+
+.PAGROUPBOXLABELLEVEL1 {
+    border-color: #2b2c36;
+    background: #2b2c36;
+    color: #fff;
+}
+
+.PSLEVEL1GRIDLABEL a {
+    color: #fff !important;
+}
+
+.PSLEVEL1GRIDLABEL span {
+    color: #aaa;
+}
+
+.PSLEVEL1GRIDLABEL .PSLEVEL1GRIDLABEL {
+    padding: 0;
+}
+
+.PSLEVEL1GRID {
+    border: none;
+}
+
+.PSLEVEL1GRID tr th,
+.PSLEVEL1GRID tr td {
+    padding: 5px;
+}
+
+.PSLEVEL1GRID tr th:last-child,
+.PSLEVEL1GRID tr td:last-child {
+    border-right: none;
+}
+
+.PSLEVEL1GRIDNBONBO {
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR, .PSLEVEL2GRIDCOLUMNHDR, .PSLEVEL3GRIDCOLUMNHDR {
+    border-bottom-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: none;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR a, .PSLEVEL2GRIDCOLUMNHDR a, .PSLEVEL3GRIDCOLUMNHDR a {
+    color: #000 !important;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR a:hover, .PSLEVEL2GRIDCOLUMNHDR a:hover, .PSLEVEL3GRIDCOLUMNHDR a:hover,
+.PSLEVEL1GRIDCOLUMNHDR a:focus, .PSLEVEL2GRIDCOLUMNHDR a:focus, .PSLEVEL3GRIDCOLUMNHDR a:focus,
+.PSLEVEL1GRIDCOLUMNHDR a:active, .PSLEVEL2GRIDCOLUMNHDR a:active, .PSLEVEL3GRIDCOLUMNHDR a:active {
+    color: #ff2b5a !important;
+    text-decoration: underline;
+}
+
+select.PSDROPDOWNLIST, a.PSPUSHBUTTON, input.PSEDITBOX {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.PSDROPDOWNLIST, .PSLEVEL1GRIDROW, .PSLEVEL2GRIDROW, .PSLEVEL3GRIDROW, .PSLONGEDITBOX, .PSSRCHDROPDOWNLABEL, .PSSRCHEDITBOXLABEL, .PSSRCHINSTRUCTIONS, .PSSRCHRESULTSFOOTER, .PSQRYINSTRUCTIONS, .PT_MCFDROPDOWNLIST, .PT_MCFEDITBOX {
+    color: #000;
+}
+
+.PSLONGEDITBOX {
+    overflow-y: hidden !important;
+}

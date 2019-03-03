@@ -1,0 +1,5 @@
+function initSsrSsTermLinks() {
+
+}
+
+initSsrSsTermLinks();

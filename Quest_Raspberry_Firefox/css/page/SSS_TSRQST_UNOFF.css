@@ -1,0 +1,76 @@
+.PSPAGECONTAINER {
+    width: 100%;
+    position: relative;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0;
+}
+
+td:empty {
+    display: none;
+}
+
+#DERIVED_REGFRM1_TITLE1 {
+    display: none;
+}
+
+#win0divSSR_TSC_TYPE_VW_INFO_FOR_STDNTS {
+    min-height: 5em;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL2GRIDODDROW, .PSLEVEL3GRIDODDROW, .PSSRCHRESULTSODDROW, .PSQRYRESULTSODDROW {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table[id^="SSR_SSTSRQ_SRCH"],
+table[id^="SSR_SSTSRQ_SRCH"] table {
+    width: 100%;
+    border: none;
+}
+
+.PSLEVEL1GRIDLABEL {
+    background: #2b2c36;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.PSLEVEL1GRIDLABEL .PSLEVEL1GRIDLABEL {
+    padding: 0;
+}
+
+.PSLEVEL1GRIDLABEL a, .PSLEVEL1GRIDLABEL span {
+    color: #fff !important;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR, .PSLEVEL2GRIDCOLUMNHDR, .PSLEVEL3GRIDCOLUMNHDR {
+    border: none;
+    background: #f6f6f6;
+    color: #000;
+    padding: 10px 15px;
+}
+
+.PSLEVEL1GRIDODDROW, .PSLEVEL1GRIDEVENROW {
+    padding: 10px 15px;
+    border-left: none;
+    border-right: none;
+}
+
+select.PSDROPDOWNLIST, a.PSPUSHBUTTON {
+    margin-bottom: 4px;
+}
+
+table[id^="SSR_SSTSRQ_SRCH$scroll"] a.PSPUSHBUTTON {
+    margin-top: 4px;
+}
+
+.raspberry-modal-content .ps_pagecontainer {
+    padding: 0 !important;
+}
+
+table.PSLEVEL1GRIDWBO {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,37 @@
+.ps_pagecontainer {
+    padding-top: 30px;
+}
+
+td:empty {
+    display: none;
+}
+
+#ACE_DERIVED_REGFRM1_GROUP_BOX td:empty,
+#ACE_DERIVED_REGFRM1_ td:empty,
+#ACE_DERIVED_REGFRM1_GROUP3 td:empty,
+#win0divDERIVED_REGFRM1_DESCR1 td:empty {
+    display: table-cell;
+}
+
+#ACE_DERIVED_REGFRM1_GROUP3 {
+    margin-left: 27px;
+    margin-top: 5px;
+}
+
+#ACE_DERIVED_REGFRM1_GROUP_BOX {
+    margin-left: -15px;
+}
+
+#win0divDERIVED_REGFRM1_GROUP_BOX table {
+    width: auto !important;
+}
+
+#ACE_DERIVED_REGFRM1_ {
+    margin-left: -15px;
+    margin-top: 4px;
+}
+
+#win0divDERIVED_REGFRM1_DESCR1 {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
