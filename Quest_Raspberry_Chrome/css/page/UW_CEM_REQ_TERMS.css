@@ -44,7 +44,7 @@ a.PAGRIDHEADER {
 }
 
 #win0divUW_DERIVED_CEM_GROUP_BOX_1 td .PSHYPERLINK {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
 }
 
 tr[id^="trUW_CEM_TR_SRCH$0_row"] {

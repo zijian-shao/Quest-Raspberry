@@ -59,7 +59,7 @@
 }
 
 #PSTAB a:hover span, .PTGRIDTAB a:hover span {
-    background: #ff2b5a !important;
+    background: var(--raspberry-highlight-color) !important;
     padding: 0 10px !important;
     color: #fff !important;
     border: none !important;
@@ -73,7 +73,7 @@
 }
 
 #PSTAB #selected a span, .PTGRIDTAB #selected a span {
-    background: #ff2b5a !important;
+    background: var(--raspberry-highlight-color) !important;
     padding: 0 10px !important;
     font-size: 12px !important;
     color: #fff !important;
@@ -138,14 +138,14 @@
 }
 
 #win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS .PTBREADCRUMBCUR {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
     display: block !important;
     text-align: center !important;
 }
 
 #win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS .PSHYPERLINK:hover,
 #win0divDERIVED_SSTSNAV_SSTS_NAV_SUBTABS .PTBREADCRUMBCUR:hover {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
     text-decoration: none !important;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .PSSRCHTITLE {
-    background: #ff2b5a;
+    background: var(--raspberry-highlight-color);
     color: #fff;
     text-transform: uppercase;
     padding: 4px 10px;

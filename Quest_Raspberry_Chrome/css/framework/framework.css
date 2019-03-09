@@ -101,7 +101,7 @@ body {
 #PT_HEADER .ps_actions_cont .ps_system_cont .psc_header-all .ps_box-group .ps-button:hover,
 #PT_HEADER .ps_actions_cont .ps_system_cont .psc_header-all .ps_box-group .ps-button:focus,
 #PT_HEADER .ps_actions_cont .ps_system_cont .psc_header-all .ps_box-group .ps-button:active {
-    background: #ff2b5a;
+    background: var(--raspberry-highlight-color);
     border: none !important;
     box-shadow: none !important;
 }
@@ -231,7 +231,7 @@ body {
 .nuitile .nuilp:active,
 .nuitile .nuilp:focus {
     background: #fff !important;
-    box-shadow: inset 0 -4px 0 #ff2b5a !important;
+    box-shadow: inset 0 -4px 0 var(--raspberry-highlight-color) !important;
 }
 
 .nuitile .nuilp .ps_box-grouplet {
@@ -250,7 +250,7 @@ body {
 .nuitile .nuilp:hover .ps_box-grouplet,
 .nuitile .nuilp:active .ps_box-grouplet,
 .nuitile .nuilp:focus .ps_box-grouplet {
-    background: #ff2b5a;
+    background: var(--raspberry-highlight-color);
 }
 
 .nuitile .nuilp .ps_box-grouplet .ps_process {
@@ -348,7 +348,7 @@ body {
     margin: 10px auto;
     width: 70px;
     height: 70px;
-    border: 6px solid #ff2b5a;
+    border: 6px solid var(--raspberry-highlight-color);
     border-bottom-color: transparent;
     border-radius: 50%;
     margin: 15px auto;
@@ -458,7 +458,7 @@ body {
 
 #PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button.psc_selected {
     background: #fff;
-    box-shadow: inset 5px 0 0 0 #ff2b5a;
+    box-shadow: inset 5px 0 0 0 var(--raspberry-highlight-color);
     border-right: none;
 }
 

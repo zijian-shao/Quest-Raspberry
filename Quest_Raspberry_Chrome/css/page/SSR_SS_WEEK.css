@@ -220,16 +220,16 @@ div[id^="win0divDERIVED_CLASS_S_DESCR"] .PSGROUPBOXLABEL {
 }
 
 #ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT input:checked ~ label {
-    color: #ff2b5a;
-    border: 1px solid #ff2b5a;
+    color: var(--raspberry-highlight-color);
+    border: 1px solid var(--raspberry-highlight-color);
     border-radius: 40px;
     background: #fff;
 }
 
 #ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT input:checked:hover ~ label {
     color: #fff;
-    border: 1px solid #ff2b5a;
-    background: #ff2b5a;
+    border: 1px solid var(--raspberry-highlight-color);
+    background: var(--raspberry-highlight-color);
 }
 
 #ACE_DERIVED_REGFRM1_SSR_SCHED_FORMAT label.fl-right {

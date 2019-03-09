@@ -4,7 +4,7 @@
 }
 
 #win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS a {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
 }
 
 #win0divDERIVED_SSTSNAV_SSS_FOOTER_LINKS > div {

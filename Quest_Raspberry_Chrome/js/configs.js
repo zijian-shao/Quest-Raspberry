@@ -16,11 +16,41 @@ function getOptionListDefault() {
         GLB_KeepSessionAlive: true,
         GLB_HighResImage: true,
         GLB_RaspberryFavicon: true,
-        GLB_RaspberryWelcomePage: true
+        GLB_RaspberryWelcomePage: true,
+        GLB_HighlightColor: '#ff2b5a'
     };
 
     return obj;
 
+}
+
+function getHighlightColorList() {
+    var list = [{
+        name: 'Raspberry',
+        color: '#ff2b5a'
+    }, {
+        name: 'Orange',
+        color: '#f59300'
+    }, {
+        name: 'Green',
+        color: '#7eb620'
+    }, {
+        name: 'Turquoise',
+        color: '#09abb4'
+    }, {
+        name: 'Blue',
+        color: '#0088fb'
+    }, {
+        name: 'Purple',
+        color: '#9571d1'
+    }, {
+        name: 'Pink',
+        color: '#ff7cd6'
+    }, {
+        name: 'Neutral',
+        color: '#757575'
+    }];
+    return list;
 }
 
 function getCommonAssetList(type) {

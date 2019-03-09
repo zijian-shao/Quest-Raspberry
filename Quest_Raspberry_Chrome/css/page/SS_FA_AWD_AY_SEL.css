@@ -55,7 +55,7 @@ span[id^="AID_YR_CAR_TERM_DESCR"] {
 }
 
 .PSLEVEL1GRIDODDROW .PSHYPERLINK, .PSLEVEL1GRIDEVENROW .PSHYPERLINK {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
 }
 
 #ACE_DERIVED_FA_SS_L_DASH_LBL {

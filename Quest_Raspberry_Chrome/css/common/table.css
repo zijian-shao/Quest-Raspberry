@@ -73,7 +73,7 @@
 .PSLEVEL1GRIDCOLUMNHDR a:hover, .PSLEVEL2GRIDCOLUMNHDR a:hover, .PSLEVEL3GRIDCOLUMNHDR a:hover,
 .PSLEVEL1GRIDCOLUMNHDR a:focus, .PSLEVEL2GRIDCOLUMNHDR a:focus, .PSLEVEL3GRIDCOLUMNHDR a:focus,
 .PSLEVEL1GRIDCOLUMNHDR a:active, .PSLEVEL2GRIDCOLUMNHDR a:active, .PSLEVEL3GRIDCOLUMNHDR a:active {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
     text-decoration: underline;
 }
 

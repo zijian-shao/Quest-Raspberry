@@ -103,6 +103,6 @@ div[id^="win0div$ICField53"] .PSGROUPBOX {
 .PSGROUPBOX .PSHYPERLINK {
     padding: 4px 0;
     display: inline-block;
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
 }
 
