@@ -83,7 +83,7 @@ body {
 
 .btn:hover, .btn:focus, .btn:active {
     color: #fff;
-    background: #ff2b5a;
+    background: var(--raspberry-highlight-color);
 }
 
 .btn-signin {

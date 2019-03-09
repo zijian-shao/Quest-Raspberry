@@ -48,7 +48,7 @@ a.PAGRIDHEADER {
 }
 
 .PSLEVEL1GRIDODDROW .PSHYPERLINK, .PSLEVEL1GRIDEVENROW .PSHYPERLINK {
-    color: #ff2b5a;
+    color: var(--raspberry-highlight-color);
 }
 
 .PSFRAMEWBO {

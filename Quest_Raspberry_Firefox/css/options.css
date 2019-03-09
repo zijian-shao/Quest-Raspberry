@@ -1,92 +1,16 @@
-/* vietnamese */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 200;
-    src: local('Muli ExtraLight'), local('Muli-ExtraLight'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adf3nOCr2z3wM.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+html, body {
+    font-size: 14px !important;
 }
 
-/* latin-ext */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 200;
-    src: local('Muli ExtraLight'), local('Muli-ExtraLight'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adf3nOCv2z3wM.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 200;
-    src: local('Muli ExtraLight'), local('Muli-ExtraLight'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adf3nOCX2zw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* vietnamese */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afT3GLRrX.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTzGLRrX.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGLQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* vietnamese */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adZXgOCr2z3wM.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adZXgOCv2z3wM.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Muli ExtraBold'), local('Muli-ExtraBold'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adZXgOCX2zw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-body, strong, p, a, h1, h2, h3, h4, h5, h6, input, button, select {
-    font-family: 'Muli', 'Microsoft Yahei', sans-serif;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-size: 13px;
     background: #2b2c36;
     text-align: center;
     -webkit-touch-callout: none;
@@ -105,15 +29,7 @@ div:after {
     clear: both;
 }
 
-div, ul, li {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-a, a:visited {
+a, a:visited, a:focus, a:hover {
     color: #ff2b5a;
     text-decoration: none;
     font-weight: bold;
@@ -134,25 +50,24 @@ a:focus, a:hover {
 }
 
 .container {
-    position: absolute;
-    display: table;
-    top: 0;
-    left: 0;
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .wrapper {
-    display: table-cell;
-    vertical-align: middle;
-    transition: all 0.2s ease;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .logo {
     margin: 0 auto 10px;
-    width: 90%;
+    width: 100%;
     height: 78px;
     background: transparent url(../img/options-logo.png) center no-repeat;
     background-size: contain;
@@ -166,18 +81,15 @@ a:focus, a:hover {
 
 .content {
     position: relative;
-    margin: auto;
-    padding: 10px 30px;
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .group {
     position: relative;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    padding: 5px;
+    flex: 0 0 50%;
 }
 
 .group:after {
@@ -186,111 +98,144 @@ a:focus, a:hover {
     clear: both;
 }
 
-.content > .group:last-child {
-    border-bottom: none;
+.group-wrapper {
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 20px;
+    height: 100%;
 }
 
 .checkbox-slide {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 45px;
+    position: relative;
+    width: 50px;
     height: 20px;
 }
 
-.checkbox-slide:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 8px;
-    top: 6px;
-    left: 0;
-    background: #ddd;
-    border-radius: 10px;
-    z-index: 0;
-    visibility: visible;
-    /*cursor: pointer;*/
+.group .checkbox-slide {
+    float: right;
+    margin-top: -2px;
 }
 
 .checkbox-slide input {
     visibility: hidden;
+    position: absolute;
 }
 
 .checkbox-slide label {
-    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.checkbox-slide label:before {
+    content: '';
     display: block;
-    width: 20px;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: 100%;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    z-index: 0;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.checkbox-slide label:after {
+    content: '';
+    display: block;
+    width: 30px;
     height: 20px;
-    top: 0;
-    left: 0;
-    background: #aaaaaa;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: auto;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.checkbox-slide input:checked + label:before {
+    background: #5bb75b;
+    border-color: #5bb75b;
+}
+
+.checkbox-slide input:checked + label:after {
+    transform: translateX(16px);
+}
+
+.option-name {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.option-desc {
+    margin-top: 10px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.color-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.color-item {
+    border-radius: 50%;
+    flex: 0 0 11%;
+    position: relative;
+}
+
+.color-item input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.color-item .color-circle {
+    width: 30px;
+    height: 30px;
+    display: block;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    transition: box-shadow 0.2s;
 }
 
-.checkbox-slide input:checked + label {
-    background: #ff2b5a;
-    -webkit-transform: translateX(25px);
-    -moz-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    -o-transform: translateX(25px);
-    transform: translateX(25px);
+.color-item.selected .color-circle {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ccc;
 }
 
-.checkbox-slide + label {
-    cursor: pointer;
-}
-
-.group-about {
-    cursor: pointer;
-}
-
-.group-about-on .about:after,
-.group-about-off .about:after {
-    content: "";
-    display: block;
-    float: right;
-    width: 0;
-    height: 0;
-    margin-top: 8px;
-    margin-right: 10px;
-}
-
-.group-about-on .about:after {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid #aaa;
-}
-
-.group-about-off .about:after {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #aaa;
-}
-
-.about-content {
+.about {
+    margin: 5px;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    text-align: left;
     overflow: hidden;
 }
 
-.about-content-body {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+.about h4 {
+    margin: 10px auto;
 }
 
-.about-content-body h4 {
-    text-transform: uppercase;
+.about p {
+    margin-bottom: 5px;
+}
+
+.about .separator {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
 }
 
 .copyright {
+    margin-top: 20px;
     text-align: center;
-    color: #ccc;
+    color: #999;
 }
 
 .raspberry-toast {
@@ -303,7 +248,7 @@ a:focus, a:hover {
     margin: 0 auto;
     padding: 15px 30px;
     text-align: center;
-    font-size: 12px;
+    font-size: 1rem;
     color: #fff;
     background: rgba(91, 183, 91, 0.9);
     z-index: 100;
@@ -383,7 +328,7 @@ a:focus, a:hover {
     left: 0;
     right: 0;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #ff2b5a;
     padding: 15px 20px;
@@ -395,4 +340,18 @@ a:focus, a:hover {
 .whatsnew-btn:hover, .welcome-btn:hover {
     background: #ff2b5a;
     color: #fff;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 90%;
+    }
+
+    .group {
+        flex: 0 0 100%;
+    }
+
+    .color-item {
+        flex: 1;
+    }
 }

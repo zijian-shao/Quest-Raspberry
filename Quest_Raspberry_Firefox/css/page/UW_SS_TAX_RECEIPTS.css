@@ -55,5 +55,5 @@ a.PSLEVEL1GRIDCOLUMNHDR {
 }
 
 .PSLEVEL1GRIDODDROW .PSHYPERLINK, .PSLEVEL1GRIDEVENROW .PSHYPERLINK {
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
 }

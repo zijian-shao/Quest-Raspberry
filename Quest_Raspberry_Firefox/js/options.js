@@ -48,7 +48,19 @@ function initOptions() {
             var optionElem;
             for (var key in items) {
                 optionElem = $('input[data-option-name="' + key + '"]');
-                optionElem.prop('checked', items[key]);
+                if (optionElem.attr('type') === 'radio') {
+                    optionElem = $('input[data-option-name="' + key + '"][value="' + items[key] + '"]');
+                    optionElem.prop('checked', items[key]);
+                } else if (optionElem.attr('type') === 'checkbox') {
+                    optionElem.prop('checked', items[key]);
+                }
+
+                switch (key) {
+                    case 'GLB_HighlightColor':
+                        optionElem.closest('.color-item').addClass('selected');
+                        break;
+                    default:
+                }
             }
 
             bindEvents();
@@ -126,23 +138,28 @@ function initOptions() {
             }
         });
 
-        // about
-        var about = $('.about-content'), aboutH = $('.about-content-body').outerHeight();
-        about.css('height', '0px').attr('data-hidden', 'true');
-
-        $('#about').on('click', function (e) {
-            e.preventDefault();
-            if (about.attr('data-hidden') === 'true') {
-                $(this).removeClass('group-about-off').addClass('group-about-on');
-                about.attr('data-hidden', 'false');
-                about.animate({height: aboutH}, 400);
-            } else {
-                about.attr('data-hidden', 'true');
-                $(this).removeClass('group-about-on').addClass('group-about-off');
-                about.animate({height: '0px'}, 400);
-            }
+        $('input[id^=color-item-]').on('change', function () {
+            $('input[id^=color-item-]').closest('.color-item').removeClass('selected');
+            $(this).closest('.color-item').addClass('selected');
         });
 
+    }
+
+    function loadColorList() {
+        var list = getHighlightColorList();
+        var elTxt = '';
+        for (var i in list) {
+            elTxt += '<div class="color-item">';
+            elTxt += '<input type="radio" ' +
+                'id="color-item-' + i + '"' +
+                'name="GLB_HighlightColor" ' +
+                'value="' + list[i].color + '" ' +
+                'data-option-name="GLB_HighlightColor" ' +
+                'data-option-type="enum">';
+            elTxt += '<label for="color-item-' + i + '" class="color-circle" title="' + list[i].name + '" style="background:' + list[i].color + '"></label>';
+            elTxt += '</div>';
+        }
+        $('#color-list').html(elTxt);
     }
 
     function getSearchParameters() {
@@ -236,6 +253,8 @@ function initOptions() {
         });
 
         processSearchParameters();
+
+        loadColorList();
 
         restoreOptions();
 

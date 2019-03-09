@@ -17,6 +17,14 @@ function initRaspberry() {
 
         initReady = true;
 
+        browser.runtime.sendMessage({
+            action: 'insertCSS',
+            data: {
+                code: ':root{--raspberry-highlight-color:' + options.GLB_HighlightColor + ';}',
+                allFrames: true
+            }
+        });
+
     }
 
     var style = document.createElement('style');

@@ -177,7 +177,7 @@
 /*}*/
 
 /*#win0divSSR_CLSRSLT_WRK_GROUPBOX1 .PSHYPERLINK {*/
-/*color: #ff2b5a !important;*/
+/*color: var(--raspberry-highlight-color) !important;*/
 /*}*/
 
 select.PSDROPDOWNLIST, a.PSPUSHBUTTON, input.PSEDITBOX {

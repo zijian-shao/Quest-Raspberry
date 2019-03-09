@@ -57,5 +57,5 @@ td:empty {
 }
 
 #DERIVED_SSSACA2_SS_UNOFF_TRSC_LINK {
-    color: #ff2b5a;
+    color: var(--raspberry-highlight-color);
 }

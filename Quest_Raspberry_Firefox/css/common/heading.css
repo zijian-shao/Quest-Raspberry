@@ -6,7 +6,7 @@
     padding-bottom: 5px !important;
     font-size: 18px !important;
     font-family: 'Muli', sans-serif !important;
-    color: #ff2b5a !important;
+    color: var(--raspberry-highlight-color) !important;
     font-weight: bold !important;
     border-bottom: 1px solid #e5e5e5 !important;
     text-transform: uppercase !important;

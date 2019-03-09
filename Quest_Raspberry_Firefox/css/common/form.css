@@ -30,19 +30,19 @@ a.PSPUSHBUTTON span:active {
 }
 
 a.PSPUSHBUTTON input {
-    border: 1px solid #ff2b5a !important;
+    border: 1px solid var(--raspberry-highlight-color) !important;
     background: none !important;
     border-radius: 0;
     cursor: pointer;
     padding-top: 0;
     padding-bottom: 0;
-    color: #ff2b5a;
+    color: var(--raspberry-highlight-color);
     line-height: 18px;
     transition: box-shadow 0.2s, color 0.2s;
 }
 
 a.PSPUSHBUTTON input:hover, a.PSPUSHBUTTON input:focus, a.PSPUSHBUTTON input:active {
-    box-shadow: inset 0 20px 0 #ff2b5a;
+    box-shadow: inset 0 20px 0 var(--raspberry-highlight-color);
     color: #fff;
 }
 
@@ -52,7 +52,7 @@ a.PSPUSHBUTTON input:hover, a.PSPUSHBUTTON input:focus, a.PSPUSHBUTTON input:act
 }
 
 .PSDROPDOWNLIST:focus {
-    border: 1px solid #ff2b5a;
+    border: 1px solid var(--raspberry-highlight-color);
 }
 
 select.PSERROR {
@@ -67,7 +67,7 @@ select.PSERROR {
 }
 
 .PSEDITBOX:focus {
-    border: 1px solid #ff2b5a;
+    border: 1px solid var(--raspberry-highlight-color);
 }
 
 input.PSERROR {
