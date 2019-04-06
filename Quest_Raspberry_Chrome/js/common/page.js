@@ -71,19 +71,28 @@ function pageCommon() {
         'PS_CS_STEP01_ENA_ICN_1',
         'PS_CS_STEP02_ENA_ICN_1',
         'PS_CS_STEP03_ENA_ICN_1',
+        'PS_CS_STEP04_ENA_ICN_1',
+        'PS_CS_STEP05_ENA_ICN_1',
+        'PS_CS_STEP06_ENA_ICN_1',
         'PS_CS_STEP01_INP_ICN_1',
         'PS_CS_STEP02_INP_ICN_1',
         'PS_CS_STEP03_INP_ICN_1',
+        'PS_CS_STEP04_INP_ICN_1',
+        'PS_CS_STEP05_INP_ICN_1',
+        'PS_CS_STEP06_INP_ICN_1',
         'PS_CS_STEP01_DIS_ICN_1',
         'PS_CS_STEP02_DIS_ICN_1',
-        'PS_CS_STEP03_DIS_ICN_1'
+        'PS_CS_STEP03_DIS_ICN_1',
+        'PS_CS_STEP04_DIS_ICN_1',
+        'PS_CS_STEP05_DIS_ICN_1',
+        'PS_CS_STEP06_DIS_ICN_1'
     ];
 
     var optimizeLocked = false;
 
     replaceImgIcon();
     optimizeControl();
-    
+
     $('#win0divPAGECONTAINER').on('DOMSubtreeModified', function () {
         setTimeout(function () {
             replaceImgIcon();
