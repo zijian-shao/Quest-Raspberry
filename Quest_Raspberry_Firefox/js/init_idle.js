@@ -74,11 +74,9 @@ function versionCompare(v1, v2, options) {
 
         if (v1parts[i] == v2parts[i]) {
             continue;
-        }
-        else if (v1parts[i] > v2parts[i]) {
+        } else if (v1parts[i] > v2parts[i]) {
             return 1;
-        }
-        else {
+        } else {
             return -1;
         }
     }
@@ -399,7 +397,7 @@ function loginFunc() {
                 } else if (self.text().match(/Feedback/i)) {
                     self.attr('target', '_blank').addClass('btn btn-feedback').appendTo('.raspberry-buttons-group');
                 } else if (self.text().match(/Privacy Policy/i)) {
-                    self.attr('target', '_blank').addClass('btn btn-privacy').appendTo('.raspberry-buttons-group');
+                    self.attr('target', '_blank').addClass('btn btn-privacy').appendTo('.raspberry-buttons-group').text('Privacy');
                 }
             });
 
@@ -457,7 +455,7 @@ function frameworkFunc() {
 
 }
 
-function contentFunc2() {
+function contentFunc() {
 
     function _initContentPage() {
         var pageInfo = getPageRelation(urlInfo.module, urlInfo.page);
@@ -566,7 +564,7 @@ function initRaspberryIdle() {
     jsText += 'var currURL = "' + currURL + '";';
     injectJS(jsText, 'head', 'text');
 
-    if (currURL.match(/cmd=login/)) {
+    if (currURL.match(/cmd=login/) || currURL.match(/cmd=logout/)) {
         // login page
         loginFunc();
     } else if (currURL.match(/cmd=expire/)) {
@@ -578,7 +576,7 @@ function initRaspberryIdle() {
         frameworkFunc();
     } else {
         // iframe content
-        contentFunc2();
+        contentFunc();
     }
 
     // if nothing matched, remove overlay after 2 sec

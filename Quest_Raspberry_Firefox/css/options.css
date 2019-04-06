@@ -335,6 +335,7 @@ a:focus, a:hover {
     background: #f6f6f6;
     max-width: 200px;
     cursor: pointer;
+    border: 1px solid #ff2b5a;
 }
 
 .whatsnew-btn:hover, .welcome-btn:hover {
