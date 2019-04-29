@@ -33,8 +33,12 @@ function initSsrSsWeek() {
         schedHtml.attr('data-optimized', '1');
 
         schedHtml.find('td').each(function (i, e) {
-            if ($(e).has('span').length && $(e).attr('scope') != 'row') {
-                $(e).addClass('raspberry-schedule-td');
+            var self = $(e);
+            if (self.has('span').length && self.attr('scope') != 'row') {
+                self.addClass('raspberry-schedule-td');
+            }
+            if (self.text().replace(/&nbsp;/g, '').trim() === '') {
+                self.addClass('raspberry-empty-sched-td');
             }
         });
 
@@ -118,6 +122,8 @@ function initSsrSsWeek() {
     }
 
     function exportImage() {
+
+        if (isBrowser('firefox')) return;
 
         var flag = $('#win0divPSPAGECONTAINER > #ACE_width');
         if (flag.attr('data-export-schedule') === '1') return;
