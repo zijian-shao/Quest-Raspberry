@@ -75,3 +75,28 @@ input.PSERROR {
     box-shadow: 0 0 4px rgba(255, 0, 0, 0.6);
     background: #ffeff3;
 }
+
+/* raspberry buttons */
+.raspberry-btn, .raspberry-btn:visited {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin: 0;
+    padding: 0 20px;
+    border: 1px solid var(--raspberry-highlight-color);
+    font-size: 9pt;
+    line-height: 18px;
+    color: var(--raspberry-highlight-color);
+    cursor: pointer;
+    box-shadow: inset 0 0 0 transparent;
+    transition: box-shadow 0.2s, color 0.2s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
+}
+
+.raspberry-btn:hover, .raspberry-btn:focus {
+    color: #fff;
+    box-shadow: inset 0 20px 0 var(--raspberry-highlight-color);
+}

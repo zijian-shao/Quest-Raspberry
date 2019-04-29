@@ -122,10 +122,6 @@ table.PSGROUPBOXWBO {
     font-family: 'Muli', sans-serif !important;
     font-weight: bold !important;
     text-transform: uppercase;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     border: 1px solid #2b2c36;
     border-radius: 40px;
@@ -212,4 +208,23 @@ div[id^="win0divDERIVED_REGFRM1_SA_STUDYLIST_SHOW"] {
 
 .PSLONGEDITBOX {
     overflow-y: hidden !important;
+}
+
+#DERIVED_SSS_SCT_SSR_PB_GO {
+    margin-top: 10px;
+}
+
+/* popup */
+.raspberry-popup ul {
+    padding-left: 1em;
+    margin-top: 0;
+}
+
+.raspberry-popup ul li {
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.raspberry-popup input[type="text"] {
+    width: 100%;
 }

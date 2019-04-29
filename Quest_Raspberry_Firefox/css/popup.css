@@ -57,8 +57,6 @@ div {
     bottom: 0;
     left: 50%;
     z-index: 0;
-    -webkit-border-radius: 0 50px 50px 0;
-    -moz-border-radius: 0 50px 50px 0;
     border-radius: 0 50px 50px 0;
 }
 
@@ -72,8 +70,6 @@ div {
     bottom: 0;
     left: 0;
     z-index: 0;
-    -webkit-border-radius: 50px 0 0 50px;
-    -moz-border-radius: 50px 0 0 50px;
     border-radius: 50px 0 0 50px;
 }
 
@@ -92,7 +88,6 @@ div {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
     border-radius: 50px;
-    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -117,14 +112,8 @@ div {
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 4px;
-    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -151,15 +140,10 @@ div {
 }
 
 .btn-red:hover {
-    -webkit-box-shadow: 0 0 0 2px #ff2b5a;
-    -moz-box-shadow: 0 0 0 2px #ff2b5a;
     box-shadow: 0 0 0 2px #ff2b5a;
-
 }
 
 .btn-green:hover {
-    -webkit-box-shadow: 0 0 0 2px #5bb75b;
-    -moz-box-shadow: 0 0 0 2px #5bb75b;
     box-shadow: 0 0 0 2px #5bb75b;
 }
 
@@ -198,10 +182,6 @@ div {
     color: #fff;
     background: #5bb75b;
     z-index: 100;
-    -webkit-transition: top 0.2s linear;
-    -moz-transition: top 0.2s linear;
-    -ms-transition: top 0.2s linear;
-    -o-transition: top 0.2s linear;
     transition: top 0.2s linear;
 }
 
