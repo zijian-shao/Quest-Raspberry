@@ -138,6 +138,7 @@ table[id^="SSR_DUMMY_REC"] {
     border: none;
     border-top: 1px solid #ececec;
     border-left: 1px solid #ececec;
+    background: none !important;
 }
 
 #WEEKLY_SCHED_HTMLAREA td.PSLEVEL3GRIDODDROW[scope="row"] > span {
@@ -182,6 +183,19 @@ table[id^="SSR_DUMMY_REC"] {
     text-align: left;
     background: #B3E5BD !important;
     border-left: 6px solid #87D28E;
+    z-index: 10;
+}
+
+.raspberry-schedule-td > span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 6px;
+    left: 0;
+    right: 6px;
+    background: #B3E5BD;
+    border-left: 6px solid #87D28E;
+    z-index: -1;
 }
 
 #WEEKLY_SCHED_HTMLAREA *::-moz-selection {
@@ -277,6 +291,10 @@ div[id^="win0divDERIVED_CLASS_S_SSR_REFRESH_CAL"] {
 }
 
 #WEEKLY_SCHED_HTMLAREA td {
+    min-height: 20px;
+}
+
+#WEEKLY_SCHED_HTMLAREA td.raspberry-empty-sched-td {
     height: 20px;
 }
 

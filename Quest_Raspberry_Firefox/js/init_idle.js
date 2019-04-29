@@ -22,7 +22,13 @@ function extensionUpdate() {
 
         console.log('New version updated (V' + newVer + ')');
 
-        if (newVer.match(/1\.0\./) && !oldVer.match(/1\.0\./)) {
+        if (newVer.match(/1\.2\./) && !oldVer.match(/1\.2\./)) {
+            setTimeout(function () {
+                alert('[ Quest Raspberry V1.2 ]\n' +
+                    '- You can now export class schedule as iCal.\n' +
+                    '- Go to "Class Schedule" and click the button in the top right corner.');
+            }, 500);
+        } else if (newVer.match(/1\.0\./) && !oldVer.match(/1\.0\./)) {
             browser.runtime.sendMessage({
                 action: 'createTab',
                 data: {url: browser.extension.getURL('/html/options.html') + '?whatsnew=' + newVer}
