@@ -95,13 +95,24 @@ function initBackground() {
 
             // request.data = {code:'', allFrames:false, frameId:123};
             function _executeScript(obj, func) {
-                if (typeof func === 'function')
+                if (typeof func === 'function') {
                     chrome.tabs.executeScript(sender.tab.id, obj, function () {
                         func();
                         catchLastError();
+                        chrome.tabs.sendMessage(sender.tab.id, {
+                            action: 'executeScriptResponse',
+                            data: obj
+                        });
                     });
-                else
-                    chrome.tabs.executeScript(sender.tab.id, obj, catchLastError);
+                } else {
+                    chrome.tabs.executeScript(sender.tab.id, obj, function () {
+                        catchLastError();
+                        chrome.tabs.sendMessage(sender.tab.id, {
+                            action: 'executeScriptResponse',
+                            data: obj
+                        });
+                    });
+                }
             }
 
             if (Array.isArray(request.data)) {
@@ -118,13 +129,24 @@ function initBackground() {
         else if (request.action == 'insertCSS') {
 
             function _insertCSS(obj, func) {
-                if (typeof func === 'function')
+                if (typeof func === 'function') {
                     chrome.tabs.insertCSS(sender.tab.id, obj, function () {
                         func();
                         catchLastError();
+                        chrome.tabs.sendMessage(sender.tab.id, {
+                            action: 'insertCSSResponse',
+                            data: obj
+                        });
                     });
-                else
-                    chrome.tabs.insertCSS(sender.tab.id, obj, catchLastError);
+                } else {
+                    chrome.tabs.insertCSS(sender.tab.id, obj, function () {
+                        catchLastError();
+                        chrome.tabs.sendMessage(sender.tab.id, {
+                            action: 'insertCSSResponse',
+                            data: obj
+                        });
+                    });
+                }
             }
 
             if (Array.isArray(request.data)) {

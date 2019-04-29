@@ -130,8 +130,14 @@ div[id^="win0divDERIVED_CLASS_S_DESCR"] .PSGROUPBOXLABEL {
 }
 
 /* schedule */
+table[id^="SSR_DUMMY_REC"] {
+    border: none;
+}
+
 #WEEKLY_SCHED_HTMLAREA {
     border: none;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
 }
 
 #WEEKLY_SCHED_HTMLAREA td.PSLEVEL3GRIDODDROW[scope="row"] > span {
@@ -139,24 +145,43 @@ div[id^="win0divDERIVED_CLASS_S_DESCR"] .PSGROUPBOXLABEL {
     padding-right: 15px;
 }
 
+/*.raspberry-schedule-td {*/
+/*    position: relative;*/
+/*    vertical-align: top;*/
+/*    background: #B3E5BD !important;*/
+/*    -webkit-box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;*/
+/*    -moz-box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;*/
+/*    box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;*/
+/*}*/
+
+/*.raspberry-schedule-td > span {*/
+/*    display: block;*/
+/*    height: auto;*/
+/*    margin: 0 6px 6px 6px;*/
+/*    padding: 10px;*/
+/*    border-left: none;*/
+/*    background: none !important;*/
+/*    line-height: 1.2em;*/
+/*    text-align: left;*/
+/*}*/
+
 .raspberry-schedule-td {
     position: relative;
     vertical-align: top;
-    background: #B3E5BD !important;
-    -webkit-box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;
-    -moz-box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;
-    box-shadow: inset -6px 0 0 #FFF, inset 0 -6px 0 #FFF, inset 6px 0 0 #87D28E;
+    background: none !important;
+    padding-bottom: 6px;
 }
 
 .raspberry-schedule-td > span {
     display: block;
-    height: auto;
-    margin: 0 6px 6px 6px;
+    height: 100%;
+    margin: 0 6px 0 0;
     padding: 10px;
     border-left: none;
-    background: none !important;
     line-height: 1.2em;
     text-align: left;
+    background: #B3E5BD !important;
+    border-left: 6px solid #87D28E;
 }
 
 #WEEKLY_SCHED_HTMLAREA *::-moz-selection {
@@ -203,10 +228,6 @@ div[id^="win0divDERIVED_CLASS_S_DESCR"] .PSGROUPBOXLABEL {
     font-family: 'Muli', sans-serif !important;
     font-weight: bold !important;
     text-transform: uppercase;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     border: 1px solid #2b2c36;
     border-radius: 40px;
@@ -257,4 +278,51 @@ div[id^="win0divDERIVED_CLASS_S_SSR_REFRESH_CAL"] {
 
 #WEEKLY_SCHED_HTMLAREA td {
     height: 20px;
+}
+
+/* popup */
+.raspberry-popup label {
+    font-weight: normal !important;
+    width: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+
+.raspberry-popup .raspberry-margin span {
+    display: inline-block;
+    width: 55px;
+}
+
+.raspberry-popup .raspberry-margin input {
+    width: 30%;
+}
+
+/* export */
+.raspberry-export-image-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.raspberry-export-image-div > canvas {
+    margin: auto;
+}
+
+.raspberry-export-block-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500%;
+    height: 100%;
+    z-index: 100000;
 }

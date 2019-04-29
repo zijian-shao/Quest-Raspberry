@@ -165,6 +165,29 @@ function scrollToUtil(pos, time, offset) {
 
 }
 
+function popupUtil(action, data) {
+    if (action === 'init') {
+        var id = 'raspberry-popup-' + Math.floor(Math.random() * 90000 + 10000);
+        var popup = $('<div class="raspberry-popup raspberry-popup-hide" id="' + id + '"><div class="raspberry-popup-container">' +
+            '<div class="raspberry-popup-title">' + data.title + '</div>' +
+            '<div class="raspberry-popup-content"></div>' +
+            '</div></div>');
+        popup.find('.raspberry-popup-content').append(data.content);
+        popup.appendTo('body');
+        return id;
+    } else if (action === 'show') {
+        $('body').addClass('raspberry-lock-scroll');
+        setTimeout(function () {
+            $('#' + data).removeClass('raspberry-popup-hide').addClass('raspberry-popup-show');
+        }, 0);
+    } else if (action === 'hide') {
+        $('#' + data).remove();
+        if (!$('.raspberry-popup').length) {
+            $('body').removeClass('raspberry-lock-scroll');
+        }
+    }
+}
+
 function isOnScreen(element) {
 
     if ($.type(element) === 'object')
@@ -201,20 +224,6 @@ function addBackToTopButton() {
         e.preventDefault();
         scrollToUtil(0, 400);
     }).appendTo('body');
-
-}
-
-function scrollToUtil(pos, time, offset) {
-
-    if ($.type(offset) !== 'number')
-        offset = 0;
-
-    if ($.type(pos) === 'object')
-        pos = pos.offset().top;
-    else if ($.type(pos) === 'string')
-        pos = $(pos).first().offset().top;
-
-    $('html').animate({scrollTop: pos - offset}, time);
 
 }
 
