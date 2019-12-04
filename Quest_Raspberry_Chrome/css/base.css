@@ -107,10 +107,16 @@
     width: 100%;
     max-width: 400px;
     height: auto;
+    max-height: 100%;
     margin: auto;
     background: #fff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transition: transform 0.4s, opacity 0.4s;
+    overflow-y: auto;
+}
+
+.raspberry-popup-container-wide {
+    max-width: 600px;
 }
 
 .raspberry-popup-hide .raspberry-popup-container {
