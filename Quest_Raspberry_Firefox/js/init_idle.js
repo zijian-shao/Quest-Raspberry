@@ -174,7 +174,11 @@ function scrollToUtil(pos, time, offset) {
 function popupUtil(action, data) {
     if (action === 'init') {
         var id = 'raspberry-popup-' + Math.floor(Math.random() * 90000 + 10000);
-        var popup = $('<div class="raspberry-popup raspberry-popup-hide" id="' + id + '"><div class="raspberry-popup-container">' +
+        var wideClass = '';
+        if (data.wide === true) {
+            wideClass = 'raspberry-popup-container-wide';
+        }
+        var popup = $('<div class="raspberry-popup raspberry-popup-hide" id="' + id + '"><div class="raspberry-popup-container ' + wideClass + '">' +
             '<div class="raspberry-popup-title">' + data.title + '</div>' +
             '<div class="raspberry-popup-content"></div>' +
             '</div></div>');

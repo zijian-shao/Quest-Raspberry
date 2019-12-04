@@ -21,6 +21,33 @@ function initSsrSsenrlList() {
         return str24;
     }
 
+    function _normalizeQuestDate(date) {
+
+        if (_normalizeQuestDate.initialized !== true) {
+
+            _normalizeQuestDate.separator = dateFormatTpl.replace(/y/gi, '').replace(/m/gi, '').replace(/d/gi, '').charAt(0);
+            var components = dateFormatTpl.split(_normalizeQuestDate.separator);
+            _normalizeQuestDate.yIndex = 0;
+            _normalizeQuestDate.mIndex = 0;
+            _normalizeQuestDate.dIndex = 0;
+
+            for (var i = 0; i < components.length; i++) {
+                if (components[i].toLowerCase() === 'yyyy') {
+                    _normalizeQuestDate.yIndex = i;
+                } else if (components[i].toLowerCase() === 'mm') {
+                    _normalizeQuestDate.mIndex = i;
+                } else if (components[i].toLowerCase() === 'dd') {
+                    _normalizeQuestDate.dIndex = i;
+                }
+            }
+
+            _normalizeQuestDate.initialized = true;
+        }
+
+        var componentsInput = date.trim().split(_normalizeQuestDate.separator);
+        return componentsInput[_normalizeQuestDate.yIndex] + componentsInput[_normalizeQuestDate.mIndex] + componentsInput[_normalizeQuestDate.dIndex];
+    }
+
     function _loadTpl() {
         summaryTpl = window.localStorage.getItem('Raspberry.ExportSchedule.SummaryTpl');
         if (summaryTpl === null) {
@@ -32,6 +59,114 @@ function initSsrSsenrlList() {
             descriptionTpl = '@code-@section: @name (@type) in @location with @prof';
             window.localStorage.setItem('Raspberry.ExportSchedule.DescriptionTpl', descriptionTpl);
         }
+        dateFormatTpl = window.localStorage.getItem('Raspberry.ExportSchedule.DateFormatTpl');
+        if (dateFormatTpl === null) {
+            dateFormatTpl = _getQuestDateFormat();
+            if (dateFormatTpl === null)
+                dateFormatTpl = 'yyyy/mm/dd';
+            window.localStorage.setItem('Raspberry.ExportSchedule.DateFormatTpl', dateFormatTpl);
+        }
+        _normalizeQuestDate.initialized = false;
+    }
+
+    function _getQuestDateFormat() {
+
+        // find all dates
+        var dateList = [];
+
+        var timeTable = $('table[id^="ACE_STDNT_ENRL_SS"] ' +
+            'div[id^="win0divDERIVED_REGFRM1_DESCR"] ' +
+            'table[id^="ACE_DERIVED_REGFRM1_DESCR"] ' +
+            'table[id^="CLASS_MTG_VW"] ' +
+            '> tbody > tr > td > table');
+
+        timeTable.each(function (index, elem) {
+            var dateElems = $(elem).find('tbody > tr[id^="trCLASS_MTG_VW"] span[id^="MTG_DATES"]');
+
+            dateElems.each(function (i, e) {
+                var dateSlice = $(e).text().trim().split(' - ');
+                dateSlice.forEach(function (e) {
+                    var s = e.trim();
+                    if (/\d/.test(s) === true) {
+                        dateList.push(s);
+                    }
+                });
+            });
+        });
+
+        if (dateList.length === 0) return null;
+
+        // separator
+        var separators = dateList[0].replace(/\d/g, '');
+        if (separators.length !== 2) return null;
+        if (separators.charAt(0) !== separators.charAt(1)) return null;
+        var separator = separators.charAt(0);
+
+        // check date format
+        var format = ['', '', ''];
+        var stack1 = [], stack2 = [];
+        var stack1Index = -1, stack2Index = -1;
+        var stack1Result = -1, stack2Result = -1; // -1:init, 0:mm or dd, 1:dd
+        dateList.forEach(function (d) {
+            var components = d.split(separator);
+            if (components[0].length === 4) {
+                format[0] = 'yyyy';
+                stack1.push(parseInt(components[1]));
+                stack1Index = 1;
+                stack2.push(parseInt(components[2]));
+                stack2Index = 2;
+            } else if (components[1].length === 4) {
+                stack1.push(parseInt(components[0]));
+                stack1Index = 0;
+                format[1] = 'yyyy';
+                stack2.push(parseInt(components[2]));
+                stack2Index = 2;
+            } else {
+                stack1.push(parseInt(components[0]));
+                stack1Index = 0;
+                stack2.push(parseInt(components[1]));
+                stack2Index = 1;
+                format[2] = 'yyyy';
+            }
+        });
+
+        var stackLength = stack1.length;
+        for (var i = 0; i < stackLength; i++) {
+            // -1:init, 0:mm or dd, 1: dd
+            if (stack1Result <= 0) {
+                if (stack1[i] <= 12) {
+                    stack1Result = 0;
+                } else {
+                    stack1Result = 1;
+                }
+            }
+            if (stack2Result <= 0) {
+                if (stack2[i] <= 12) {
+                    stack2Result = 0;
+                } else {
+                    stack2Result = 1;
+                }
+            }
+            if (stack1Result === 1 || stack2Result === 1) {
+                break;
+            }
+        }
+
+        if (stack1Result === 0 && stack2Result === 0) {
+            // assume stack1 is month
+            format[stack1Index] = 'mm';
+            format[stack2Index] = 'dd';
+        } else if (stack1Result === 0 && stack2Result === 1) {
+            // stack1 is month
+            format[stack1Index] = 'mm';
+            format[stack2Index] = 'dd';
+        } else {
+            // stack2 is month
+            format[stack1Index] = 'dd';
+            format[stack2Index] = 'mm';
+        }
+
+        return format.join(separator);
     }
 
     function _getCalendarText() {
@@ -132,8 +267,10 @@ function initSsrSsenrlList() {
                 var startEndDateSplit = elem.startEndDate.split(' - ');
                 var startDate = startEndDateSplit[0],
                     endDate = startEndDateSplit[1];
-                var icsStartDate = startDate.replace(/\//g, ''),
-                    icsEndDate = endDate.replace(/\//g, '');
+                // var icsStartDate = startDate.replace(/\//g, ''),
+                //     icsEndDate = endDate.replace(/\//g, '');
+                var icsStartDate = _normalizeQuestDate(startDate),
+                    icsEndDate = _normalizeQuestDate(endDate);
 
                 var days = elem.daysTimes.match(/^[A-Z]+ /gi)[0].trim();
                 var times = elem.daysTimes.replace(days + ' ', '');
@@ -251,29 +388,37 @@ function initSsrSsenrlList() {
                     _loadTpl();
 
                     var popupContent = $('<form></form>');
-                    popupContent.append('<p><strong>Introduction</strong></p>')
+                    popupContent.append('<p><strong>Export Event Template</strong></p>')
                         .append('<ul><li>The exported ics file will use these templates to generate summary and description.</li>' +
-                            '<li>Possible placeholders: @code, @section, @name, @type, @location, @prof</li>' +
-                            '<li>Leave empty to reset to default</li></ul>')
-                        .append('<hr>')
-                        .append('<p><strong>Summary Template</strong></p>')
+                            '<li>Possible placeholders: @code, @section, @name, @type, @location, @prof.</li>' +
+                            '<li>Leave empty to reset to default.</li></ul>')
+                        .append('<p><strong>Summary</strong></p>')
                         .append('<p><input type="text" name="raspberry-summary-tpl"></p>')
-                        .append('<p><strong>Description Template</strong></p>')
+                        .append('<p><strong>Description</strong></p>')
                         .append('<p><input type="text" name="raspberry-description-tpl"></p>')
+                        .append('<hr>')
+                        .append('<p><strong>Quest Start/End Date Format</strong></p>')
+                        .append('<ul><li>Quest may display start/end date in various formats. Modify this field if it\'s incorrect.</li>' +
+                            '<li>Possible placeholders: yyyy, mm, dd. Use lowercase letters only.</li>' +
+                            '<li>Leave empty to reset to default.</li></ul>')
+                        .append('<p><input type="text" name="raspberry-date-format-tpl"></p>')
                         .append('<hr>')
                         .append('<p><button type="submit" class="raspberry-btn">Save Settings</button></p>');
                     var popupID = popupUtil('init', {
                         title: 'Export Settings',
-                        content: popupContent
+                        content: popupContent,
+                        wide: true
                     });
                     var popup = $('#' + popupID);
                     popup.find('input[name="raspberry-summary-tpl"]').val(summaryTpl);
                     popup.find('input[name="raspberry-description-tpl"]').val(descriptionTpl);
+                    popup.find('input[name="raspberry-date-format-tpl"]').val(dateFormatTpl);
                     popup.find('form').on('submit', function (e) {
                         e.preventDefault();
 
                         var newSummaryTpl = popup.find('input[name="raspberry-summary-tpl"]').val();
                         var newDescriptionTpl = popup.find('input[name="raspberry-description-tpl"]').val();
+                        var newDateFormatTpl = popup.find('input[name="raspberry-date-format-tpl"]').val();
 
                         if (newSummaryTpl !== '')
                             window.localStorage.setItem('Raspberry.ExportSchedule.SummaryTpl', newSummaryTpl);
@@ -284,6 +429,11 @@ function initSsrSsenrlList() {
                             window.localStorage.setItem('Raspberry.ExportSchedule.DescriptionTpl', newDescriptionTpl);
                         else
                             window.localStorage.removeItem('Raspberry.ExportSchedule.DescriptionTpl');
+
+                        if (newDateFormatTpl !== '')
+                            window.localStorage.setItem('Raspberry.ExportSchedule.DateFormatTpl', newDateFormatTpl);
+                        else
+                            window.localStorage.removeItem('Raspberry.ExportSchedule.DateFormatTpl');
 
                         _loadTpl();
 
@@ -312,7 +462,7 @@ function initSsrSsenrlList() {
 
     var warningMsg = '', scheduleCount = 0;
 
-    var summaryTpl, descriptionTpl;
+    var summaryTpl, descriptionTpl, dateFormatTpl;
     _loadTpl();
 
     exportSchedule();
