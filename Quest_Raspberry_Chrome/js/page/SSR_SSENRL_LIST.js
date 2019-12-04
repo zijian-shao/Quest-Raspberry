@@ -463,7 +463,7 @@ function initSsrSsenrlList() {
     var warningMsg = '', scheduleCount = 0;
 
     var summaryTpl, descriptionTpl, dateFormatTpl;
-    _loadTpl();
+    // _loadTpl();
 
     exportSchedule();
     quickRowClick();
