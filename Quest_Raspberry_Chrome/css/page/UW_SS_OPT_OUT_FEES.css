@@ -1,0 +1,44 @@
+.ps_pagecontainer {
+    padding-top: 30px;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+}
+
+td:empty {
+    display: none;
+}
+
+table[id^="UW_STDNT_OPTFEE_V1$scroll"] {
+    width: 100%;
+}
+
+table[id^="UW_STDNT_OPTFEE_V1$scroll"] th, table[id^="UW_STDNT_OPTFEE_V1$scroll"] td {
+    padding: 10px;
+}
+
+table[id^="UW_STDNT_OPTFEE_V$scroll"] {
+    width: 100%;
+}
+
+table[id^="UW_STDNT_OPTFEE_V$scroll"] .PSLEVEL1GRIDLABEL {
+    border: none;
+}
+
+table[id^="UW_STDNT_OPTFEE_V$scroll"] th, table[id^="UW_STDNT_OPTFEE_V$scroll"] td {
+    padding: 10px;
+}
+
+table[id^="UW_STDNT_OPTFEE_V$scroll"] td {
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.PSLEVEL1GRIDCOLUMNHDR, .PSLEVEL2GRIDCOLUMNHDR, .PSLEVEL3GRIDCOLUMNHDR {
+    border-bottom-width: 1px;
+}
+
+.PSPUSHBUTTON {
+    margin-top: 10px;
+}
