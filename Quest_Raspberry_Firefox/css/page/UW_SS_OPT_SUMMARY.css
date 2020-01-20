@@ -1,0 +1,35 @@
+.ps_pagecontainer {
+    padding-top: 30px;
+}
+
+table [id^="UW_OPT_SUMM_VW"] {
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    width: 100%;
+}
+
+table [id^="UW_OPT_SUMM_VW"] th, table [id^="UW_OPT_SUMM_VW"] td {
+    padding: 10px;
+}
+
+.PSPAGECONTAINER {
+    width: 100%;
+}
+
+td:empty {
+    display: none;
+}
+
+.selector-row {
+    width: auto;
+    display: block;
+}
+
+div[id="win0divUW_SS_WORK_ACAD_CAREER"] {
+    padding-left: 20px;
+}
+
+div[id^="win0divUW_SS_WORK_ACAD_CAREER"] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

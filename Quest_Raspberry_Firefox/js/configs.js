@@ -331,6 +331,31 @@ function getPageRelation(module, page) {
                 js: ['page', 'UW_SS_TAX_RECEIPTS']
             }
         },
+        // optional fees
+        'SA_LEARNER_SERVICES.UW_SS_OPT_SUMMARY.GBL': {
+            'UW_SS_OPT_SUMMARY': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_OPT_SUMMARY'],
+                js: ['page', 'UW_SS_OPT_SUMMARY']
+            }
+        },
+        'SA_LEARNER_SERVICES.UW_SS_OPT_OUT_FEES.GBL': {
+            'UW_SS_OPT_OUT': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_OPT_OUT_FEES'],
+                js: ['page', 'UW_SS_OPT_OUT_FEES']
+            },
+            'UW_SS_OPT_OUT_FEES': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_OPT_OUT_FEES'],
+                js: ['page', 'UW_SS_OPT_OUT_FEES']
+            },
+            'UW_SS_OPT_OUT_CONF': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_OPT_OUT_FEES'],
+                js: ['page', 'UW_SS_OPT_OUT_FEES']
+            }
+        },
         // manage my bank account
         'SA_LEARNER_SERVICES.SSF_BANK_SUMM.GBL': {
             'SSF_SS_BANK_VW': {
@@ -348,8 +373,8 @@ function getPageRelation(module, page) {
             }
         },
         // names
-        'CC_PORTFOLIO.SS_CC_NAMES.GBL': {
-            'SS_CC_NAME': {
+        'UW_SS_MENU.UW_SS_SC_NAME.GBL': {
+            'UW_SS_CC_NAME': {
                 default: true,
                 css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'SS_CC_NAME'],
                 js: ['footer', 'page', 'SS_CC_NAME']
@@ -401,6 +426,14 @@ function getPageRelation(module, page) {
                 default: true,
                 css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_CC_INFL_NORM'],
                 js: ['footer', 'page', 'UW_SS_CC_INFL_NORM']
+            }
+        },
+        // social insurance number
+        'UW_SS_MENU.UW_SS_SIN_UPDATE.GBL': {
+            'UW_NID_DISPLAY_SS': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_NID_DISPLAY_SS'],
+                js: ['footer', 'page', 'UW_NID_DISPLAY_SS']
             }
         },
         // holds
