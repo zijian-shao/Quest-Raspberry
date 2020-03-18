@@ -59,7 +59,8 @@ function pageCommon() {
         'PS_SCROLL_TOP_VER_ICN_1',
         'PT_CALENDAR_1',
         'PT_HELP_SWAN_1',
-        'PT_PROMPT_LOOKUP_1'
+        'PT_PROMPT_LOOKUP_1',
+        'PTADS_WARNING_ICN_1'
     ];
     var arr25x25 = [
         'PS_CONFIRM_CHECKMARK_IMG_1',

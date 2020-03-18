@@ -198,6 +198,16 @@ table[id^="SSR_DUMMY_REC"] {
     z-index: -1;
 }
 
+.raspberry-schedule-conflict-td > span {
+    background: #F9D2D5 !important;
+    border-left: 6px solid #fd9fa7;
+}
+
+.raspberry-schedule-conflict-td > span:after {
+    background: #F9D2D5;
+    border-left: 6px solid #fd9fa7;
+}
+
 #WEEKLY_SCHED_HTMLAREA *::-moz-selection {
     background: #87D28E;
     color: #000;

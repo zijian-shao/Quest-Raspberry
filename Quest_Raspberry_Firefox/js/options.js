@@ -28,6 +28,9 @@ function initOptions() {
             }
             M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
             if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
+            if (ua.indexOf('Edge') !== -1 || ua.indexOf('Edg') !== -1) {
+                M[0] = 'Edge';
+            }
             return {name: M[0], version: M[1]};
         }
 
@@ -121,9 +124,7 @@ function initOptions() {
 
                         break;
                 }
-            }
-
-            else if (inputType == 'radio') {
+            } else if (inputType == 'radio') {
 
                 switch (optType) {
                     // save "value" attr of the radio
@@ -263,6 +264,17 @@ function initOptions() {
 
         // feedback
         $('#feedback-link').attr('href', getFeedbackLink());
+
+        // about
+        $('#about-show-more').on('click', function (e) {
+            e.preventDefault();
+            var about = $('#about');
+            var self = $(this);
+            if (about.hasClass('collapsed')) {
+                about.removeClass('collapsed');
+                self.remove();
+            }
+        });
 
     });
 

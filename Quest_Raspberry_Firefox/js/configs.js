@@ -323,11 +323,27 @@ function getPageRelation(module, page) {
                 js: ['page', 'UW_PNOTE']
             }
         },
-        // tax receipts
-        'SA_LEARNER_SERVICES.UW_SS_TAX_RECEIPTS.GBL': {
+        // tax - T2202/T2202A
+        'UW_SS_MENU.UW_SS_TAX_RECEIPTS.GBL': {
             'UW_SS_TAX_RECEIPTS': {
                 default: true,
                 css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_TAX_RECEIPTS'],
+                js: ['page', 'UW_SS_TAX_RECEIPTS']
+            }
+        },
+        // tax - T4A
+        'UW_SS_MENU.UW_SS_T4.GBL': {
+            'UW_SS_T4': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_T4'],
+                js: ['page', 'UW_SS_TAX_RECEIPTS']
+            }
+        },
+        // tax - donation receipt
+        'UW_SS_MENU.UW_SS_DONATION_RCP.GBL': {
+            'UW_SS_DONATION_RCP': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_DONATION_RCP'],
                 js: ['page', 'UW_SS_TAX_RECEIPTS']
             }
         },
@@ -474,7 +490,8 @@ function getLink(key) {
         github: 'https://github.com/SssWind/Quest-Raspberry',
         donate: 'https://www.paypal.me/zjshao',
         mailTo: 'mailto:sam.zj.shao@gmail.com?Subject=Quest Raspberry Extension',
-        questLogin: 'https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login&languageCd=ENG'
+        questLogin: 'https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login&languageCd=ENG',
+        privacy: 'https://zijianshao.com/raspberry/privacy.html'
     };
     return list[key];
 }
