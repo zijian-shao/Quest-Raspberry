@@ -391,7 +391,7 @@ function initSsrSsenrlList() {
                     popupContent.append('<p><strong>Export Event Template</strong></p>')
                         .append('<ul><li>The exported ics file will use these templates to generate summary and description.</li>' +
                             '<li>Possible placeholders: @code, @section, @name, @type, @location, @prof.</li>' +
-                            '<li>Leave empty to reset to default.</li></ul>')
+                            '<li>Leave empty and click save to reset to default.</li></ul>')
                         .append('<p><strong>Summary</strong></p>')
                         .append('<p><input type="text" name="raspberry-summary-tpl"></p>')
                         .append('<p><strong>Description</strong></p>')
@@ -400,7 +400,7 @@ function initSsrSsenrlList() {
                         .append('<p><strong>Quest Start/End Date Format</strong></p>')
                         .append('<ul><li>Quest may display start/end date in various formats. Modify this field if it\'s incorrect.</li>' +
                             '<li>Possible placeholders: yyyy, mm, dd. Use lowercase letters only.</li>' +
-                            '<li>Leave empty to reset to default.</li></ul>')
+                            '<li>Leave empty and click save to reset to default.</li></ul>')
                         .append('<p><input type="text" name="raspberry-date-format-tpl"></p>')
                         .append('<hr>')
                         .append('<p><button type="submit" class="raspberry-btn">Save Settings</button></p>');

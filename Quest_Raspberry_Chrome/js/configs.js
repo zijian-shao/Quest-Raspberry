@@ -323,11 +323,27 @@ function getPageRelation(module, page) {
                 js: ['page', 'UW_PNOTE']
             }
         },
-        // tax receipts
-        'SA_LEARNER_SERVICES.UW_SS_TAX_RECEIPTS.GBL': {
+        // tax - T2202/T2202A
+        'UW_SS_MENU.UW_SS_TAX_RECEIPTS.GBL': {
             'UW_SS_TAX_RECEIPTS': {
                 default: true,
                 css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_TAX_RECEIPTS'],
+                js: ['page', 'UW_SS_TAX_RECEIPTS']
+            }
+        },
+        // tax - T4A
+        'UW_SS_MENU.UW_SS_T4.GBL': {
+            'UW_SS_T4': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_T4'],
+                js: ['page', 'UW_SS_TAX_RECEIPTS']
+            }
+        },
+        // tax - donation receipt
+        'UW_SS_MENU.UW_SS_DONATION_RCP.GBL': {
+            'UW_SS_DONATION_RCP': {
+                default: true,
+                css: ['font', 'footer', 'form', 'heading', 'navbar', 'page', 'UW_SS_DONATION_RCP'],
                 js: ['page', 'UW_SS_TAX_RECEIPTS']
             }
         },
@@ -464,17 +480,33 @@ function getPageRelation(module, page) {
 }
 
 function getLink(key) {
+    var ua = navigator.userAgent;
     var list = {
-        darklightStore: 'https://chrome.google.com/webstore/detail/learn-darklight/lhodieepeghcemhpbloffmljoklaklho',
-        azureStore: 'https://chrome.google.com/webstore/detail/waterlooworks-azure/peeaakkcmdoeljddgdkcailflcballmm',
-        autologStore: 'https://chrome.google.com/webstore/detail/waterloo-autolog/ncpmlgiinkikhgijoplpnjggobinhkpl',
-        raspberryStore: 'https://chrome.google.com/webstore/detail/quest-raspberry/ifhnmgllkaeebiklhakndljclagikoak',
+        darklightStore: '',
+        azureStore: '',
+        autologStore: '',
+        raspberryStore: '',
         feedback: 'https://docs.google.com/forms/d/e/1FAIpQLSclsWFwy27uSvrXv-59W2m6AW3ReA3yb5HjWGW6W3KVjabq8g/viewform?usp=pp_url&entry.742841570=@@extVersion@@&entry.797603490=@@browser@@&entry.865994972=@@os@@',
         officialWebsite: 'https://www.zijianshao.com/raspberry/',
         github: 'https://github.com/SssWind/Quest-Raspberry',
         donate: 'https://www.paypal.me/zjshao',
         mailTo: 'mailto:sam.zj.shao@gmail.com?Subject=Quest Raspberry Extension',
-        questLogin: 'https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login&languageCd=ENG'
+        questLogin: 'https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login&languageCd=ENG',
+        privacy: 'https://zijianshao.com/raspberry/privacy.html'
     };
+
+    if (ua.indexOf('Edge') !== -1 || ua.indexOf('Edg') !== -1) {
+        // edge
+        list['darklightStore'] = 'https://microsoftedge.microsoft.com/addons/detail/gniehfhhoajdjieojgojjgbcochajole';
+        list['azureStore'] = 'https://microsoftedge.microsoft.com/addons/detail/bjkcklpgffonojilhdfbjbifgpacajmm';
+        list['autologStore'] = 'https://microsoftedge.microsoft.com/addons/detail/eifpbkdegnmkokbngeifkmmkjmimaogb';
+        list['raspberryStore'] = 'https://microsoftedge.microsoft.com/addons/detail/bbhlapokfenllaokgocokaemclmncafk';
+    } else {
+        // chrome
+        list['darklightStore'] = 'https://chrome.google.com/webstore/detail/learn-darklight/lhodieepeghcemhpbloffmljoklaklho';
+        list['azureStore'] = 'https://chrome.google.com/webstore/detail/waterlooworks-azure/peeaakkcmdoeljddgdkcailflcballmm';
+        list['autologStore'] = 'https://chrome.google.com/webstore/detail/waterloo-autolog/ncpmlgiinkikhgijoplpnjggobinhkpl';
+        list['raspberryStore'] = 'https://chrome.google.com/webstore/detail/quest-raspberry/ifhnmgllkaeebiklhakndljclagikoak';
+    }
     return list[key];
 }

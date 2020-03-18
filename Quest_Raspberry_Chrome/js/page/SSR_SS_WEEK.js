@@ -40,10 +40,12 @@ function initSsrSsWeek() {
             if (self.text().replace(/&nbsp;/g, '').trim() === '') {
                 self.addClass('raspberry-empty-sched-td');
             }
+            if (self.find('img[alt="Coinciding class"]').length > 0) {
+                self.addClass('raspberry-schedule-conflict-td');
+            }
         });
 
         schedHtml.children('colgroup').first().attr('width', '1%');
-
     }
 
     function calendarToCanvas(fileName) {

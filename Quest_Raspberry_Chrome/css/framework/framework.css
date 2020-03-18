@@ -437,10 +437,15 @@ body {
     background: none;
 }
 
-#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button {
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button,
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-button {
     padding: 15px 5px 15px 20px;
     border-right: 5px solid #ddd;
     transition: background 0.2s, padding 0.2s;
+}
+
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-list .ps_ag-step-button {
+    border-bottom: 1px solid #eee;
 }
 
 #PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row:hover .ps_ag-step-button {
@@ -448,17 +453,48 @@ body {
     background: #fff;
 }
 
-#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button.psc_selected {
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row:hover .ps_ag-step-group-button,
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row:hover .ps_ag-step-group-list .ps_ag-step-button {
+    padding-left: 20px;
+    background: #fff;
+}
+
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-list .ps_ag-step-button:hover {
+    padding-left: 25px;
+}
+
+
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row:hover .ps_ag-step-group-list {
+    padding-left: 0;
+    background: #fff;
+}
+
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-button:hover {
+    padding-left: 25px !important;
+}
+
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button.psc_selected,
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-button.psc_selected {
     background: #fff;
     box-shadow: inset 5px 0 0 0 var(--raspberry-highlight-color);
     border-right: none;
 }
 
-#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button .ps_box-value {
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-list .ps_ag-step-button.psc_selected,
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-list .ps_ag-step-group-button.psc_selected {
+    border-right: 5px solid #ddd;
+}
+
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-button .ps_box-value,
+#PT_SIDE .ps_box-scrollarea .ps_box-scrollarea-row .ps_ag-step-group-button .ps_box-value {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;
+}
+
+#PT_SIDE .ps_box-scrollarea .ps_ag-navigation-list-level2 {
+    border-top-color: #ddd !important;
 }
 
 .pst_panel-tabcontainer {
