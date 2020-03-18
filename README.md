@@ -3,6 +3,8 @@
 ## Install
 Chrome: [View in Chrome Web Store](https://chrome.google.com/webstore/detail/quest-raspberry/ifhnmgllkaeebiklhakndljclagikoak "Quest Raspberry (Chrome Version)")
 
+Edge: [View in Edge Addons](https://microsoftedge.microsoft.com/addons/detail/bbhlapokfenllaokgocokaemclmncafk "Quest Raspberry (Edge Version)")
+
 Firefox: [View in Firefox Addons](https://addons.mozilla.org/addon/quest-raspberry/ "Quest Raspberry (Firefox Version)")
 
 ## Introduction
